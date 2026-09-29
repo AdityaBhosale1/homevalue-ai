@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeValue AI – House Price Prediction</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-[#030712] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black overflow-x-hidden">
+
+  <!-- Main Hero Wrapper with Full Screen Background -->
+  <div class="hero-wrapper relative min-h-screen flex flex-col justify-between overflow-hidden">
+    
+    <!-- Dark Navy Transparent Overlay -->
+    <div class="hero-overlay"></div>
+    
+    <!-- Subtle Ambient Glow Blob -->
+    <div class="glow-blob"></div>
+
+    <!-- NAVBAR SECTION -->
+    <header class="relative z-30 w-full">
+      <nav class="glass-nav fixed top-0 left-0 right-0 w-full py-3 px-6 md:px-12 lg:px-16 transition-all duration-300">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          
+          <!-- Logo Area -->
+          <a href="#" class="flex items-center gap-2.5 group focus:outline-none">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500/20 to-blue-600/20 border border-cyan-400/30 flex items-center justify-center text-cyan-400 shadow-md group-hover:scale-105 transition-transform duration-200">
+              <i data-lucide="home" class="w-4 h-4 text-cyan-400"></i>
+            </div>
+            <div class="flex flex-col">
+              <span class="font-bold text-lg tracking-tight text-white font-['Space_Grotesk']">
+                HomeValue <span class="text-gradient">AI</span>
+              </span>
+              <span class="text-[9px] tracking-widest text-cyan-400/70 font-semibold uppercase -mt-0.5">ML PRICE INTELLIGENCE</span>
+            </div>
+          </a>
+
+          <!-- Desktop Links (Centered) -->
+          <div class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wide">
+            <a href="#" class="nav-link active py-1">Home</a>
+            <a href="#predict" class="nav-link py-1">Predict</a>
+            <a href="#analytics" class="nav-link py-1">Analytics</a>
+            <a href="#about" class="nav-link py-1">About</a>
+          </div>
+
+          <!-- Right Action Button -->
+          <div class="hidden md:flex items-center">
+            <a href="#predict" class="btn-primary text-xs uppercase tracking-wider px-5 py-2 flex items-center gap-1.5 shadow-sm">
+              <span>Get Started</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-cyan-400 focus:outline-none p-1.5 rounded-lg glass-pill">
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden mt-3 pt-3 border-t border-slate-800/80 flex flex-col gap-3">
+          <a href="#" class="nav-link active text-sm py-2 px-3 rounded-lg hover:bg-slate-800/40">Home</a>
+          <a href="#predict" class="nav-link text-sm py-2 px-3 rounded-lg hover:bg-slate-800/40">Predict</a>
+          <a href="#analytics" class="nav-link text-sm py-2 px-3 rounded-lg hover:bg-slate-800/40">Analytics</a>
+          <a href="#about" class="nav-link text-sm py-2 px-3 rounded-lg hover:bg-slate-800/40">About</a>
+          <a href="#predict" class="btn-primary text-xs py-2.5 px-5 w-full flex items-center justify-center gap-2 mt-1">
+            <span>Get Started</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- HERO MAIN CONTENT SECTION -->
+    <main class="relative z-20 flex-1 flex items-center px-6 md:px-12 lg:px-16 pt-24 pb-8 min-h-screen">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Side Content Column -->
+        <div class="lg:col-span-8 xl:col-span-7 space-y-6 text-left max-w-xl">
+          
+          <!-- Small Top Pill Badge -->
+          <div class="animate-fade-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/25 bg-cyan-500/5 text-cyan-300 text-[11px] font-semibold tracking-wider uppercase">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span>AI-POWERED REAL ESTATE VALUATION</span>
+            </div>
+          </div>
+
+          <!-- Hero Heading -->
+          <h1 class="animate-fade-left delay-1 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-200 leading-[1.18] font-['Space_Grotesk']">
+            Predict Your <span class="text-gradient font-extrabold">Home’s Value</span> with <span class="text-white font-extrabold">Machine Learning</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="animate-fade-left delay-2 text-sm sm:text-base text-slate-300/90 font-normal leading-relaxed max-w-lg">
+            Estimate property values instantly using location, area, amenities, and machine-learning driven market insights.
+          </p>
+
+          <!-- CTA Buttons & Model Accuracy Metric Card -->
+          <div class="animate-fade-up delay-3 space-y-4 pt-1">
+            <div class="flex flex-wrap items-center gap-3">
+              <!-- Primary Button -->
+              <a href="#predict" class="btn-primary text-xs sm:text-sm px-6 py-2.5 flex items-center gap-2.5 group font-semibold">
+                <i data-lucide="calculator" class="w-4 h-4"></i>
+                <span>Predict House Price</span>
+              </a>
+
+              <!-- Secondary Button -->
+              <a href="#analytics" class="btn-secondary text-xs sm:text-sm px-6 py-2.5 flex items-center gap-2.5 font-semibold">
+                <i data-lucide="line-chart" class="w-4 h-4 text-cyan-400"></i>
+                <span>Explore Analytics</span>
+              </a>
+            </div>
+
+
+            <!-- Dynamic Model Accuracy Metric Card -->
+            <div class="pt-2">
+              <div class="glass-card p-3.5 rounded-2xl border border-slate-700/60 flex items-center gap-3.5 max-w-xs shadow-lg">
+                <div class="w-9 h-9 rounded-xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                  <i data-lucide="trending-up" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase tracking-wider text-slate-400 font-semibold">Model Performance</div>
+                  <div class="text-sm font-bold text-white font-['Space_Grotesk'] flex items-center gap-1.5">
+                    <span id="hero-model-r2">83.4%</span> <span class="text-[10px] text-emerald-400 font-medium">(R² Score)</span>
+                  </div>
+                  <div id="hero-model-subtitle" class="text-[9px] text-slate-400/80 italic">Real Data Model — Gradient Boosting (Tuned)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TRUST / FEATURE HIGHLIGHTS CARDS -->
+          <div class="animate-fade-up delay-4 pt-4 border-t border-slate-800/80">
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              
+              <!-- Card 1 -->
+              <div class="glass-card p-3 rounded-xl flex flex-col gap-2">
+                <div class="feature-icon-box w-8 h-8 text-cyan-400">
+                  <i data-lucide="cpu" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-white tracking-wide">ML-Based Prediction</h3>
+                  <p class="text-[10px] text-slate-400 leading-tight">Gradient Boosted Model</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="glass-card p-3 rounded-xl flex flex-col gap-2">
+                <div class="feature-icon-box w-8 h-8 text-cyan-400">
+                  <i data-lucide="map-pin" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-white tracking-wide">Location Intelligence</h3>
+                  <p class="text-[10px] text-slate-400 leading-tight">Geospatial Feature Mapping</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="glass-card p-3 rounded-xl flex flex-col gap-2">
+                <div class="feature-icon-box w-8 h-8 text-cyan-400">
+                  <i data-lucide="zap" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-white tracking-wide">Instant Results</h3>
+                  <p class="text-[10px] text-slate-400 leading-tight">Sub-Second Estimation</p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="glass-card p-3 rounded-xl flex flex-col gap-2">
+                <div class="feature-icon-box w-8 h-8 text-cyan-400">
+                  <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <h3 class="text-xs font-bold text-white tracking-wide">Market Analytics</h3>
+                  <p class="text-[10px] text-slate-400 leading-tight">Real-Time Trend Data</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side Open Space -->
+        <div class="hidden lg:block lg:col-span-4 xl:col-span-5 pointer-events-none"></div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- HOUSE PRICE PREDICTION SECTION -->
+  <section id="predict" class="relative z-20 py-24 px-6 md:px-12 lg:px-16 min-h-screen flex flex-col justify-center items-center border-t border-slate-800/80 bg-gradient-to-b from-[#030712] via-[#050c1e] to-[#030712]">
+    
+    <!-- Ambient Section Glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Section Header & Backend Status Indicator -->
+    <div class="max-w-3xl text-center space-y-4 mb-12 relative z-10 reveal-on-scroll">
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+          <i data-lucide="cpu" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>AI Valuation Engine</span>
+        </div>
+
+        <!-- Backend Status Indicator -->
+        <div id="api-status-badge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-slate-700/80 bg-slate-900/80 text-xs font-semibold">
+          <span id="api-status-dot" class="w-2 h-2 rounded-full bg-slate-500 animate-pulse"></span>
+          <span id="api-status-text" class="text-slate-400">Checking API...</span>
+        </div>
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight font-['Space_Grotesk']">
+        <span class="text-gradient">House Price Prediction</span>
+      </h2>
+      <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto">
+        Enter your property details and get an estimated price using our Machine Learning model.
+      </p>
+    </div>
+
+    <!-- 2-Column Desktop Grid Container -->
+    <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+      
+      <!-- LEFT COLUMN: PROPERTY DETAILS FORM (7 Cols) -->
+      <div class="lg:col-span-7 reveal-on-scroll stagger-1">
+        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/60 shadow-2xl backdrop-blur-2xl relative overflow-hidden">
+          
+          <!-- Accent Line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-transparent"></div>
+
+          <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-800/80">
+            <div class="w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+              <i data-lucide="sliders" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Property Parameters</h3>
+              <p class="text-xs text-slate-400">Fill in all details for maximum accuracy.</p>
+            </div>
+          </div>
+
+          <!-- Validation & Network Error Banner -->
+          <div id="predict-error-banner" class="hidden mb-6 p-4 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs sm:text-sm flex items-center gap-3">
+            <i data-lucide="alert-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>
+            <span id="predict-error-text">Unable to generate prediction. Please check if the ML API is running.</span>
+          </div>
+
+          <form id="predict-main-form" class="space-y-5" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              
+              <!-- 1. Location -->
+              <div class="form-group">
+                <label for="predict-location" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Location <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-location" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Pune" class="bg-[#071126]">Pune</option>
+                    <option value="Mumbai" class="bg-[#071126]">Mumbai</option>
+                    <option value="Nashik" class="bg-[#071126]">Nashik</option>
+                    <option value="Nagpur" class="bg-[#071126]">Nagpur</option>
+                    <option value="Bengaluru" class="bg-[#071126]">Bengaluru</option>
+                    <option value="Hyderabad" class="bg-[#071126]">Hyderabad</option>
+                    <option value="Delhi NCR" class="bg-[#071126]">Delhi NCR</option>
+                    <option value="Chennai" class="bg-[#071126]">Chennai</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select a location.</span>
+              </div>
+
+              <!-- 2. Area (sq.ft.) -->
+              <div class="form-group">
+                <label for="predict-area" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Area (sq.ft.) <span class="text-cyan-400">*</span>
+                </label>
+                <input type="number" id="predict-area" min="100" max="50000" placeholder="1200" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all">
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Enter a valid area in sq.ft.</span>
+              </div>
+
+              <!-- 3. BHK -->
+              <div class="form-group">
+                <label for="predict-bhk" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  BHK <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-bhk" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select BHK</option>
+                    <option value="1" class="bg-[#071126]">1</option>
+                    <option value="2" class="bg-[#071126]">2</option>
+                    <option value="3" class="bg-[#071126]">3</option>
+                    <option value="4" class="bg-[#071126]">4</option>
+                    <option value="5" class="bg-[#071126]">5+</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select BHK count.</span>
+              </div>
+
+              <!-- 4. Bathrooms -->
+              <div class="form-group">
+                <label for="predict-bathrooms" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Bathrooms <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-bathrooms" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select Bathrooms</option>
+                    <option value="1" class="bg-[#071126]">1</option>
+                    <option value="2" class="bg-[#071126]">2</option>
+                    <option value="3" class="bg-[#071126]">3</option>
+                    <option value="4" class="bg-[#071126]">4+</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select bathroom count.</span>
+              </div>
+
+              <!-- 5. Property Type -->
+              <div class="form-group">
+                <label for="predict-property-type" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Property Type <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-property-type" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select Property Type</option>
+                    <option value="Apartment" class="bg-[#071126]">Apartment</option>
+                    <option value="Independent House" class="bg-[#071126]">Independent House</option>
+                    <option value="Villa" class="bg-[#071126]">Villa</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select property type.</span>
+              </div>
+
+              <!-- 6. Furnishing Status -->
+              <div class="form-group">
+                <label for="predict-furnishing" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Furnishing Status <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-furnishing" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select Furnishing</option>
+                    <option value="Unfurnished" class="bg-[#071126]">Unfurnished</option>
+                    <option value="Semi-Furnished" class="bg-[#071126]">Semi-Furnished</option>
+                    <option value="Fully Furnished" class="bg-[#071126]">Fully Furnished</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select furnishing status.</span>
+              </div>
+
+              <!-- 7. Parking -->
+              <div class="form-group">
+                <label for="predict-parking" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Parking <span class="text-cyan-400">*</span>
+                </label>
+                <div class="relative">
+                  <select id="predict-parking" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all appearance-none cursor-pointer">
+                    <option value="" disabled selected>Select Parking</option>
+                    <option value="1" class="bg-[#071126]">Yes</option>
+                    <option value="0" class="bg-[#071126]">No</option>
+                  </select>
+                  <i data-lucide="chevron-down" class="w-4 h-4 text-slate-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+                </div>
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Please select parking.</span>
+              </div>
+
+              <!-- 8. Property Age -->
+              <div class="form-group">
+                <label for="predict-age" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                  Property Age (Years) <span class="text-cyan-400">*</span>
+                </label>
+                <input type="number" id="predict-age" min="0" max="100" placeholder="e.g. 5" class="w-full bg-slate-900/90 border border-slate-700/70 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 focus:outline-none transition-all">
+                <span class="field-error-msg text-[11px] text-rose-400 mt-1 hidden">Enter age in years.</span>
+              </div>
+
+            </div>
+
+            <!-- Submit Button -->
+            <div class="pt-2">
+              <button type="submit" id="btn-submit-predict" class="btn-primary w-full py-3.5 text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2.5 group">
+                <i data-lucide="sparkles" class="w-4 h-4 group-hover:rotate-12 transition-transform duration-300"></i>
+                <span>Predict Price</span>
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: PREDICTION RESULT CARD (5 Cols) -->
+      <div class="lg:col-span-5 reveal-on-scroll stagger-2">
+        <div id="predict-result-card" class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/60 shadow-2xl backdrop-blur-2xl relative overflow-hidden min-h-[480px] flex flex-col justify-between">
+          
+          <!-- Accent Line -->
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-cyan-400 to-blue-500"></div>
+
+          <!-- INITIAL PLACEHOLDER STATE -->
+          <div id="result-placeholder" class="flex-1 flex flex-col items-center justify-center text-center p-8 space-y-4 my-auto">
+            <div class="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400 shadow-xl float-animation">
+              <i data-lucide="home" class="w-8 h-8"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white font-['Space_Grotesk']">Your Prediction Will Appear Here</h3>
+            <p class="text-xs text-slate-400 max-w-xs leading-relaxed">
+              Fill in the property details on the left form and click <strong class="text-cyan-300">Predict Price</strong>.
+            </p>
+          </div>
+
+          <!-- ACTIVE API RESULT CONTENT -->
+          <div id="result-active-content" class="hidden space-y-5 animate-pop-result">
+            
+            <!-- Result Header Badge -->
+            <div class="flex items-center justify-between pb-3.5 border-b border-slate-800">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-cyan-300 text-xs font-semibold">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+                <span>ML Estimated Value</span>
+              </div>
+              <span class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Instant Response
+              </span>
+            </div>
+
+            <!-- Green Real Data Model Notice Badge -->
+            <div id="real-model-banner" class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs flex flex-col gap-0.5">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span id="real-model-title" class="font-bold uppercase tracking-wider text-[11px]">Real Data Model</span>
+              </div>
+              <p id="real-model-desc" class="text-[11px] text-emerald-300/90 italic">Tuned on 1,250+ validated housing records across Indian cities.</p>
+            </div>
+
+            <!-- Amber Demo Model Notice (Visible if is_demo_data is true) -->
+            <div id="demo-model-banner" class="hidden p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs flex flex-col gap-0.5">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span class="font-bold uppercase tracking-wider text-[11px]">Demo Model</span>
+              </div>
+              <p class="text-[11px] text-amber-300/90 italic">This prediction currently uses demo training data.</p>
+            </div>
+
+            <!-- Main Price Box -->
+            <div class="space-y-1.5 text-center py-4 bg-slate-900/60 rounded-2xl border border-cyan-500/20 shadow-inner">
+              <div class="text-[11px] uppercase tracking-widest text-slate-400 font-semibold">Estimated Property Price</div>
+              <div id="result-price-main" class="text-3xl sm:text-4xl font-extrabold text-white font-['Space_Grotesk'] text-gradient">
+                ₹0
+              </div>
+              <div id="result-price-range" class="text-xs text-slate-400 font-medium">
+                Price Range: <span class="text-cyan-300 font-semibold">₹0 – ₹0</span>
+              </div>
+            </div>
+
+            <!-- 4 Small Stat Cards Grid -->
+            <div class="grid grid-cols-2 gap-3">
+              
+              <!-- Stat 1: Rate / Sq.Ft -->
+              <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800/80 flex flex-col gap-1 hover:border-cyan-500/40 transition-colors">
+                <div class="flex items-center gap-1.5 text-cyan-400">
+                  <i data-lucide="ruler" class="w-3.5 h-3.5"></i>
+                  <span class="text-[10px] uppercase text-slate-400 font-semibold">Rate / Sq.Ft</span>
+                </div>
+                <div id="result-rate-sqft" class="text-xs sm:text-sm font-bold text-white">₹0 / sq.ft.</div>
+              </div>
+
+              <!-- Stat 2: Location -->
+              <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800/80 flex flex-col gap-1 hover:border-cyan-500/40 transition-colors">
+                <div class="flex items-center gap-1.5 text-blue-400">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                  <span class="text-[10px] uppercase text-slate-400 font-semibold">Location</span>
+                </div>
+                <div id="result-location-val" class="text-xs sm:text-sm font-bold text-white">--</div>
+              </div>
+
+              <!-- Stat 3: Configuration -->
+              <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800/80 flex flex-col gap-1 hover:border-cyan-500/40 transition-colors">
+                <div class="flex items-center gap-1.5 text-purple-400">
+                  <i data-lucide="bed" class="w-3.5 h-3.5"></i>
+                  <span class="text-[10px] uppercase text-slate-400 font-semibold">Configuration</span>
+                </div>
+                <div id="result-bhk-val" class="text-xs sm:text-sm font-bold text-white">--</div>
+              </div>
+
+              <!-- Stat 4: Market Demand -->
+              <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800/80 flex flex-col gap-1 hover:border-cyan-500/40 transition-colors">
+                <div class="flex items-center gap-1.5 text-emerald-400">
+                  <i data-lucide="trending-up" class="w-3.5 h-3.5"></i>
+                  <span class="text-[10px] uppercase text-slate-400 font-semibold">Market Demand</span>
+                </div>
+                <div id="result-demand-val" class="text-xs font-bold text-emerald-400 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>High Market Demand</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="text-center pt-1">
+              <span id="result-model-footer" class="text-[10px] text-slate-500 italic">Gradient Boosting (Tuned) • Scikit-Learn</span>
+            </div>
+
+            <!-- Explain Prediction Section: "Why this price?" -->
+            <div id="explain-prediction-container" class="pt-4 border-t border-slate-800/80 space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-lg bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+                    <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xs font-bold text-white font-['Space_Grotesk']">Why this price?</h4>
+                    <p class="text-[10px] text-slate-400">See which property characteristics influenced the ML estimate.</p>
+                  </div>
+                </div>
+                <span class="text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 font-semibold">SHAP ML Explain</span>
+              </div>
+
+              <!-- Dynamic Contribution Bars List -->
+              <div id="explain-bars-list" class="space-y-2">
+                <!-- Dynamic bars loaded by script.js -->
+              </div>
+
+              <!-- Dynamic Generated Summary Sentence -->
+              <div id="explain-summary-text" class="text-[11px] text-slate-300/90 italic bg-slate-900/60 p-2.5 rounded-xl border border-slate-800/80 leading-relaxed">
+                Calculating feature impact breakdown...
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHAT-IF PRICE SIMULATOR SECTION -->
+  <section id="what-if-section" class="hidden relative z-20 py-16 px-6 md:px-12 lg:px-16 border-t border-slate-800/80 bg-gradient-to-b from-[#030712] via-[#040a1b] to-[#030712] reveal-on-scroll">
+    <div class="max-w-7xl mx-auto space-y-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl space-y-2">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+          <i data-lucide="sliders-horizontal" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Interactive ML Sandbox</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white font-['Space_Grotesk']">
+          What-If <span class="text-gradient">Price Simulator</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300">
+          See how changing property characteristics may affect the estimated value in real-time.
+        </p>
+      </div>
+
+      <!-- 2-Column Grid (Desktop) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- LEFT COLUMN: Simulator Controls (7 Cols) -->
+        <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/60 shadow-2xl backdrop-blur-2xl space-y-6 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-500"></div>
+
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="settings" class="w-4 h-4 text-cyan-400"></i>
+              <span class="text-xs font-bold text-white uppercase tracking-wider">Adjust Parameters</span>
+            </div>
+            <!-- Locked Location Badge -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-700/80 text-[11px] text-slate-300">
+              <i data-lucide="lock" class="w-3 h-3 text-cyan-400"></i>
+              <span>Fixed: <strong id="simulator-locked-loc" class="text-cyan-300">Pune (Baner)</strong></span>
+            </div>
+          </div>
+
+          <div class="space-y-5">
+            <!-- 1. Area Slider (500 - 5000 sq.ft.) -->
+            <div class="space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <label for="sim-area" class="font-bold uppercase tracking-wider text-slate-300">Property Area (sq.ft.)</label>
+                <span id="sim-area-val" class="font-mono font-bold text-cyan-400 text-sm">1,200 sq.ft.</span>
+              </div>
+              <input type="range" id="sim-area" min="500" max="5000" step="25" value="1200" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400 focus:outline-none">
+              <div class="flex justify-between text-[10px] text-slate-500 font-medium">
+                <span>500 sq.ft.</span>
+                <span>2,750 sq.ft.</span>
+                <span>5,000 sq.ft.</span>
+              </div>
+            </div>
+
+            <!-- 2. Property Age Slider (0 - 30 yrs) -->
+            <div class="space-y-2">
+              <div class="flex justify-between items-center text-xs">
+                <label for="sim-age" class="font-bold uppercase tracking-wider text-slate-300">Property Age (Years)</label>
+                <span id="sim-age-val" class="font-mono font-bold text-cyan-400 text-sm">5 Years</span>
+              </div>
+              <input type="range" id="sim-age" min="0" max="30" step="1" value="5" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-400 focus:outline-none">
+              <div class="flex justify-between text-[10px] text-slate-500 font-medium">
+                <span>New (0 yrs)</span>
+                <span>15 yrs</span>
+                <span>30 yrs</span>
+              </div>
+            </div>
+
+            <!-- Select Dropdowns Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              
+              <!-- BHK -->
+              <div>
+                <label for="sim-bhk" class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">BHK</label>
+                <select id="sim-bhk" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2.5 text-xs text-white focus:border-cyan-400 focus:outline-none cursor-pointer">
+                  <option value="1">1 BHK</option>
+                  <option value="2">2 BHK</option>
+                  <option value="3" selected>3 BHK</option>
+                  <option value="4">4 BHK</option>
+                  <option value="5">5+ BHK</option>
+                </select>
+              </div>
+
+              <!-- Bathrooms -->
+              <div>
+                <label for="sim-bathrooms" class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">Bathrooms</label>
+                <select id="sim-bathrooms" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2.5 text-xs text-white focus:border-cyan-400 focus:outline-none cursor-pointer">
+                  <option value="1">1</option>
+                  <option value="2" selected>2</option>
+                  <option value="3">3</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+
+              <!-- Parking -->
+              <div>
+                <label for="sim-parking" class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">Parking</label>
+                <select id="sim-parking" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2.5 text-xs text-white focus:border-cyan-400 focus:outline-none cursor-pointer">
+                  <option value="1" selected>Yes (Covered)</option>
+                  <option value="0">No Parking</option>
+                </select>
+              </div>
+
+              <!-- Property Type -->
+              <div>
+                <label for="sim-type" class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">Property Type</label>
+                <select id="sim-type" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2.5 text-xs text-white focus:border-cyan-400 focus:outline-none cursor-pointer">
+                  <option value="Apartment" selected>Apartment</option>
+                  <option value="Independent House">Independent House</option>
+                  <option value="Villa">Villa</option>
+                </select>
+              </div>
+
+              <!-- Furnishing -->
+              <div class="sm:col-span-2">
+                <label for="sim-furnishing" class="block text-[11px] font-bold uppercase tracking-wider text-slate-300 mb-1.5">Furnishing</label>
+                <select id="sim-furnishing" class="w-full bg-slate-900 border border-slate-700/80 rounded-xl px-3 py-2.5 text-xs text-white focus:border-cyan-400 focus:outline-none cursor-pointer">
+                  <option value="Unfurnished">Unfurnished</option>
+                  <option value="Semi-Furnished" selected>Semi-Furnished</option>
+                  <option value="Fully Furnished">Fully Furnished</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Before / After Comparison Card (5 Cols) -->
+        <div class="lg:col-span-5 glass-card p-6 sm:p-8 rounded-3xl border border-slate-700/60 shadow-2xl backdrop-blur-2xl space-y-6 relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500"></div>
+
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2">
+              <i data-lucide="git-compare" class="w-4 h-4 text-cyan-400"></i>
+              <span class="text-xs font-bold text-white uppercase tracking-wider">Live Comparison</span>
+            </div>
+            <span id="sim-recalculating-badge" class="hidden text-[10px] px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 font-semibold flex items-center gap-1">
+              <i data-lucide="loader-2" class="w-3 h-3 animate-spin"></i>
+              Recalculating...
+            </span>
+          </div>
+
+          <div class="space-y-4 my-auto">
+            
+            <!-- Original Baseline Price -->
+            <div class="bg-slate-900/70 p-4 rounded-2xl border border-slate-800 flex items-center justify-between">
+              <div>
+                <div class="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Original Estimate</div>
+                <div id="sim-orig-price" class="text-xl font-bold text-slate-300 font-['Space_Grotesk']">₹0</div>
+              </div>
+              <span class="text-[10px] uppercase tracking-wider font-semibold text-slate-400 bg-slate-800 px-2.5 py-1 rounded-lg">Baseline</span>
+            </div>
+
+            <!-- Updated Price -->
+            <div class="bg-gradient-to-br from-slate-900/90 to-cyan-950/30 p-5 rounded-2xl border border-cyan-500/30 space-y-1 shadow-lg">
+              <div class="text-[10px] uppercase font-bold text-cyan-400 tracking-wider flex items-center justify-between">
+                <span>Updated Estimate</span>
+                <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+              </div>
+              <div id="sim-updated-price" class="text-3xl font-extrabold text-white font-['Space_Grotesk'] text-gradient">₹0</div>
+            </div>
+
+            <!-- Difference Badge -->
+            <div id="sim-diff-box" class="p-3.5 rounded-2xl border bg-emerald-500/10 border-emerald-500/30 text-emerald-300 flex items-center justify-between transition-colors">
+              <div class="flex items-center gap-2">
+                <i id="sim-diff-icon" data-lucide="trending-up" class="w-4 h-4 text-emerald-400"></i>
+                <span class="text-xs font-bold uppercase tracking-wider">Price Difference</span>
+              </div>
+              <div class="text-right">
+                <span id="sim-diff-amount" class="text-sm font-extrabold font-['Space_Grotesk']">+₹0</span>
+                <span id="sim-diff-percent" class="text-xs font-bold ml-1 text-emerald-400">(+0.0%)</span>
+              </div>
+            </div>
+
+            <!-- Natural Language Comparison Narrative -->
+            <div id="sim-summary-text" class="text-xs text-slate-300/90 bg-slate-900/80 p-3.5 rounded-xl border border-slate-800/80 leading-relaxed font-normal">
+              Adjust any property feature on the left to simulate real-time price changes.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  <!-- MARKET ANALYTICS SECTION -->
+  <section id="analytics" class="relative z-20 py-20 px-6 md:px-12 lg:px-16 border-t border-slate-800/80 bg-gradient-to-b from-[#030712] via-[#050c1e] to-[#030712] reveal-on-scroll">
+    <div class="max-w-7xl mx-auto space-y-10">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+          <i data-lucide="line-chart" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Data-Driven Market Insights</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white font-['Space_Grotesk']">
+          Market <span class="text-gradient">Analytics</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300">
+          Explore property market trends and pricing insights derived from the training dataset.
+        </p>
+      </div>
+
+      <!-- Analytics Error State Banner -->
+      <div id="analytics-error-banner" class="hidden p-4 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs sm:text-sm flex items-center gap-3">
+        <i data-lucide="alert-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>
+        <span>Analytics data is currently unavailable.</span>
+      </div>
+
+      <!-- 4 KPI SUMMARY CARDS GRID -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- KPI 1: Average Property Price -->
+        <div class="glass-card p-5 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Average Property Price</span>
+            <div class="w-8 h-8 rounded-xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+              <i data-lucide="indian-rupee" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div>
+            <div id="kpi-avg-price" class="text-2xl font-extrabold text-white font-['Space_Grotesk']">
+              <div class="h-7 w-28 bg-slate-800 rounded skeleton-pulse"></div>
+            </div>
+            <p id="kpi-avg-price-sub" class="text-[10px] text-slate-400 mt-1 italic">Based on dataset housing records</p>
+          </div>
+        </div>
+
+        <!-- KPI 2: Average Price per Sq.ft. -->
+        <div class="glass-card p-5 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Avg Price / Sq.Ft.</span>
+            <div class="w-8 h-8 rounded-xl bg-blue-500/10 border border-blue-400/30 flex items-center justify-center text-blue-400">
+              <i data-lucide="ruler" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div>
+            <div id="kpi-avg-rate" class="text-2xl font-extrabold text-white font-['Space_Grotesk']">
+              <div class="h-7 w-28 bg-slate-800 rounded skeleton-pulse"></div>
+            </div>
+            <p id="kpi-avg-rate-sub" class="text-[10px] text-slate-400 mt-1 italic">Overall dataset average rate</p>
+          </div>
+        </div>
+
+        <!-- KPI 3: Most Expensive City -->
+        <div class="glass-card p-5 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Most Expensive City</span>
+            <div class="w-8 h-8 rounded-xl bg-amber-500/10 border border-amber-400/30 flex items-center justify-center text-amber-400">
+              <i data-lucide="building-2" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div>
+            <div id="kpi-exp-city" class="text-2xl font-extrabold text-white font-['Space_Grotesk']">
+              <div class="h-7 w-28 bg-slate-800 rounded skeleton-pulse"></div>
+            </div>
+            <p id="kpi-exp-city-sub" class="text-[10px] text-slate-400 mt-1 italic">Highest avg property valuation</p>
+          </div>
+        </div>
+
+        <!-- KPI 4: Most Common Property Type -->
+        <div class="glass-card p-5 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Dominant Property Type</span>
+            <div class="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
+              <i data-lucide="pie-chart" class="w-4 h-4"></i>
+            </div>
+          </div>
+          <div>
+            <div id="kpi-common-type" class="text-2xl font-extrabold text-white font-['Space_Grotesk']">
+              <div class="h-7 w-28 bg-slate-800 rounded skeleton-pulse"></div>
+            </div>
+            <p id="kpi-common-type-sub" class="text-[10px] text-slate-400 mt-1 italic">Highest market inventory share</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 4 CHARTS GRID (2 per row on Desktop) -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Chart 1: Average Price by City -->
+        <div class="glass-card p-6 sm:p-7 rounded-3xl border border-slate-700/60 space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="bar-chart-3" class="w-4 h-4 text-cyan-400"></i>
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Average Price by City (₹ Lakhs)</h3>
+            </div>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-price-city"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 2: Average Price per Sq.ft. by City -->
+        <div class="glass-card p-6 sm:p-7 rounded-3xl border border-slate-700/60 space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="trending-up" class="w-4 h-4 text-blue-400"></i>
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Average Rate / Sq.Ft. by City</h3>
+            </div>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-rate-city"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 3: BHK-wise Average Price -->
+        <div class="glass-card p-6 sm:p-7 rounded-3xl border border-slate-700/60 space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="layers" class="w-4 h-4 text-indigo-400"></i>
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">BHK-wise Average Price (₹ Lakhs)</h3>
+            </div>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full">
+            <canvas id="chart-bhk-price"></canvas>
+          </div>
+        </div>
+
+        <!-- Chart 4: Property Type Distribution -->
+        <div class="glass-card p-6 sm:p-7 rounded-3xl border border-slate-700/60 space-y-4 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="pie-chart" class="w-4 h-4 text-emerald-400"></i>
+              <h3 class="text-xs font-bold text-white uppercase tracking-wider">Property Type Distribution</h3>
+            </div>
+          </div>
+          <div class="relative h-64 sm:h-72 w-full flex items-center justify-center">
+            <canvas id="chart-prop-type"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & PROJECT ARCHITECTURE SECTION -->
+  <section id="about" class="relative z-20 py-24 px-6 md:px-12 lg:px-16 border-t border-slate-800/80 bg-gradient-to-b from-[#030712] via-[#040a1b] to-[#030712] reveal-on-scroll">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl space-y-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+          <i data-lucide="info" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Platform & System Overview</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white font-['Space_Grotesk']">
+          About <span class="text-gradient">HomeValue AI</span>
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          An explainable machine learning platform for real-estate price estimation and market analysis.
+        </p>
+      </div>
+
+      <!-- 4 COMPACT ABOUT CARDS -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1: Problem -->
+        <div class="glass-card p-6 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-2xl bg-cyan-500/10 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+            <i data-lucide="help-circle" class="w-5 h-5"></i>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Problem</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Property prices vary significantly based on location, area, amenities, age, and other factors. HomeValue AI helps estimate property value using machine learning.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: ML Solution -->
+        <div class="glass-card p-6 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-400/30 flex items-center justify-center text-blue-400">
+            <i data-lucide="cpu" class="w-5 h-5"></i>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">ML Solution</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Multiple regression models are trained and evaluated using robust preprocessing, cross-validation, and hyperparameter tuning.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Explainable AI -->
+        <div class="glass-card p-6 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-2xl bg-indigo-500/10 border border-indigo-400/30 flex items-center justify-center text-indigo-400">
+            <i data-lucide="sparkles" class="w-5 h-5"></i>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Explainable AI</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              SHAP-based explanations show how individual property features influence each prediction.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Interactive Analysis -->
+        <div class="glass-card p-6 rounded-3xl border border-slate-700/60 flex flex-col justify-between space-y-3 relative overflow-hidden">
+          <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-400/30 flex items-center justify-center text-emerald-400">
+            <i data-lucide="sliders" class="w-5 h-5"></i>
+          </div>
+          <div class="space-y-1.5">
+            <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Interactive Analysis</h3>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              What-If simulation and market analytics allow users to explore how property characteristics affect estimated value.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PROJECT ARCHITECTURE FLOW DIAGRAM -->
+      <div class="glass-card p-8 rounded-3xl border border-slate-700/60 space-y-6 relative overflow-hidden">
+        <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+          <div class="flex items-center gap-2.5">
+            <i data-lucide="workflow" class="w-5 h-5 text-cyan-400"></i>
+            <h3 class="text-base font-bold text-white font-['Space_Grotesk']">System Architecture Flow</h3>
+          </div>
+          <span class="text-[11px] text-cyan-400 font-semibold px-2.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-400/20">End-to-End ML Pipeline</span>
+        </div>
+
+        <!-- Flow Grid (Horizontal Desktop / Vertical Mobile) -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 items-center">
+          
+          <!-- Node 1: Frontend -->
+          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-center space-y-1 hover:border-cyan-500/50 transition-colors">
+            <div class="w-8 h-8 rounded-xl bg-cyan-500/20 text-cyan-400 mx-auto flex items-center justify-center">
+              <i data-lucide="layout" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xs font-bold text-white">Frontend</div>
+            <div class="text-[10px] text-slate-400">HTML / CSS / JS / Vite</div>
+          </div>
+
+          <!-- Arrow 1 -->
+          <div class="hidden md:flex justify-center text-slate-600">
+            <i data-lucide="arrow-right" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+          <div class="flex md:hidden justify-center text-slate-600 my-1">
+            <i data-lucide="arrow-down" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+
+          <!-- Node 2: FastAPI Backend -->
+          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-center space-y-1 hover:border-cyan-500/50 transition-colors">
+            <div class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-400 mx-auto flex items-center justify-center">
+              <i data-lucide="server" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xs font-bold text-white">FastAPI Backend</div>
+            <div class="text-[10px] text-slate-400">Python REST API</div>
+          </div>
+
+          <!-- Arrow 2 -->
+          <div class="hidden md:flex justify-center text-slate-600">
+            <i data-lucide="arrow-right" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+          <div class="flex md:hidden justify-center text-slate-600 my-1">
+            <i data-lucide="arrow-down" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+
+          <!-- Node 3: Preprocessing -->
+          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-center space-y-1 hover:border-cyan-500/50 transition-colors">
+            <div class="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-400 mx-auto flex items-center justify-center">
+              <i data-lucide="filter" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xs font-bold text-white">Preprocessing</div>
+            <div class="text-[10px] text-slate-400">Scikit-learn ColumnTransformer</div>
+          </div>
+
+          <!-- Arrow 3 -->
+          <div class="hidden md:flex justify-center text-slate-600">
+            <i data-lucide="arrow-right" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+          <div class="flex md:hidden justify-center text-slate-600 my-1">
+            <i data-lucide="arrow-down" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+
+          <!-- Node 4: ML Model -->
+          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-center space-y-1 hover:border-cyan-500/50 transition-colors">
+            <div class="w-8 h-8 rounded-xl bg-indigo-500/20 text-indigo-400 mx-auto flex items-center justify-center">
+              <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xs font-bold text-white">ML Model</div>
+            <div class="text-[10px] text-slate-400">Gradient Boosting Regressor</div>
+          </div>
+
+          <!-- Arrow 4 -->
+          <div class="hidden md:flex justify-center text-slate-600">
+            <i data-lucide="arrow-right" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+          <div class="flex md:hidden justify-center text-slate-600 my-1">
+            <i data-lucide="arrow-down" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+
+          <!-- Node 5: Outputs -->
+          <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-800 text-center space-y-1 hover:border-cyan-500/50 transition-colors">
+            <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center">
+              <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+            </div>
+            <div class="text-xs font-bold text-white">Outputs</div>
+            <div class="text-[10px] text-slate-400">Prediction / SHAP / Simulator / Analytics</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DYNAMIC MODEL SUMMARY & TECH STACK GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- MODEL SUMMARY CARD (7 Cols) -->
+        <div class="lg:col-span-7 glass-card p-7 rounded-3xl border border-slate-700/60 space-y-6 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="award" class="w-4 h-4 text-cyan-400"></i>
+              <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Model Performance & Metadata Summary</h3>
+            </div>
+            <!-- Dynamic Dataset Badge -->
+            <span id="about-data-badge" class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/10 border border-emerald-500/30 text-emerald-300">
+              Real Dataset
+            </span>
+          </div>
+
+          <!-- Metadata Stat Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            
+            <!-- Model Name -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Model Name</div>
+              <div id="about-model-name" class="text-xs font-bold text-white">Gradient Boosting (Tuned)</div>
+            </div>
+
+            <!-- R2 Score -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Holdout R² Score</div>
+              <div id="about-r2-score" class="text-base font-extrabold text-cyan-400 font-['Space_Grotesk']">0.8337 (83.4%)</div>
+            </div>
+
+            <!-- MAE -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">MAE (Error)</div>
+              <div id="about-mae" class="text-base font-extrabold text-emerald-400 font-['Space_Grotesk']">17.97 Lakhs</div>
+            </div>
+
+            <!-- RMSE -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">RMSE</div>
+              <div id="about-rmse" class="text-base font-extrabold text-blue-400 font-['Space_Grotesk']">27.12 Lakhs</div>
+            </div>
+
+            <!-- Dataset Size -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Dataset Records</div>
+              <div id="about-dataset-size" class="text-base font-extrabold text-purple-400 font-['Space_Grotesk']">1,250 rows</div>
+            </div>
+
+            <!-- Training Date -->
+            <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 space-y-1">
+              <div class="text-[10px] uppercase font-bold text-slate-400">Last Trained</div>
+              <div id="about-training-date" class="text-xs font-semibold text-slate-300">September 2026</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TECH STACK CARD (5 Cols) -->
+        <div class="lg:col-span-5 glass-card p-7 rounded-3xl border border-slate-700/60 space-y-6 relative overflow-hidden">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="code-2" class="w-4 h-4 text-cyan-400"></i>
+              <h3 class="text-sm font-bold text-white font-['Space_Grotesk']">Technology Stack</h3>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            
+            <!-- Frontend Stack -->
+            <div class="space-y-2">
+              <div class="text-[11px] uppercase font-bold text-slate-400 tracking-wider">Frontend Engine</div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">HTML5</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Tailwind CSS</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">JavaScript (ES6+)</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Vite</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Chart.js</span>
+              </div>
+            </div>
+
+            <!-- Backend Stack -->
+            <div class="space-y-2">
+              <div class="text-[11px] uppercase font-bold text-slate-400 tracking-wider">Backend API</div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Python 3.11</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">FastAPI</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Uvicorn</span>
+              </div>
+            </div>
+
+            <!-- Machine Learning Stack -->
+            <div class="space-y-2">
+              <div class="text-[11px] uppercase font-bold text-slate-400 tracking-wider">Machine Learning</div>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Scikit-Learn</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Gradient Boosting</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">SHAP</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Pandas & NumPy</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="relative z-20 w-full py-10 text-xs text-slate-400 border-t border-slate-800/80 bg-[#020617] glass-nav">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+      
+      <!-- Brand & Description (6 Cols) -->
+      <div class="md:col-span-6 space-y-3">
+        <a href="#" class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500/20 to-blue-600/20 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+            <i data-lucide="home" class="w-4 h-4 text-cyan-400"></i>
+          </div>
+          <span class="font-bold text-lg text-white font-['Space_Grotesk']">
+            HomeValue <span class="text-gradient">AI</span>
+          </span>
+        </a>
+        <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+          Machine Learning House Price Prediction & Real Estate Analytics Platform.
+        </p>
+        <div class="text-[11px] text-slate-500 pt-1">
+          © <span id="footer-year">2026</span> HomeValue AI. Designed for Portfolio & ML Engineering.
+        </div>
+      </div>
+
+      <!-- Quick Links (3 Cols) -->
+      <div class="md:col-span-3 space-y-2">
+        <div class="text-xs font-bold text-white uppercase tracking-wider mb-2 font-['Space_Grotesk']">Quick Links</div>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="#" class="hover:text-cyan-400 transition-colors">Home</a></li>
+          <li><a href="#predict" class="hover:text-cyan-400 transition-colors">Predict House Price</a></li>
+          <li><a href="#analytics" class="hover:text-cyan-400 transition-colors">Market Analytics</a></li>
+          <li><a href="#about" class="hover:text-cyan-400 transition-colors">About & Architecture</a></li>
+        </ul>
+      </div>
+
+      <!-- Technologies (3 Cols) -->
+      <div class="md:col-span-3 space-y-2">
+        <div class="text-xs font-bold text-white uppercase tracking-wider mb-2 font-['Space_Grotesk']">Core Tech Stack</div>
+        <div class="flex flex-col gap-1.5 text-xs text-slate-400">
+          <span>Python • Scikit-learn</span>
+          <span>FastAPI • Uvicorn</span>
+          <span>SHAP TreeExplainer</span>
+          <span>Vite • Chart.js</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- INTERACTIVE ANALYTICS MODAL -->
+  <div id="analytics-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 modal-backdrop">
+    <div class="modal-content w-full max-w-2xl rounded-3xl p-6 sm:p-8 relative overflow-hidden animate-fade-up">
+      <button id="close-analytics-modal" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full hover:bg-slate-800/60 focus:outline-none">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-cyan-400">
+          <i data-lucide="line-chart" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-xl font-bold text-white font-['Space_Grotesk']">ML Model Performance & Analytics</h2>
+          <p class="text-xs text-slate-400">Evaluation metrics and feature importance weights.</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 mb-6">
+        <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 text-center">
+          <div class="text-[11px] uppercase text-slate-400">R² Accuracy Score</div>
+          <div id="analytics-modal-r2" class="text-xl font-bold text-cyan-400 font-['Space_Grotesk']">0.8337</div>
+        </div>
+        <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 text-center">
+          <div class="text-[11px] uppercase text-slate-400">Mean Abs Error (MAE)</div>
+          <div id="analytics-modal-mae" class="text-xl font-bold text-emerald-400 font-['Space_Grotesk']">17.97L</div>
+        </div>
+        <div class="bg-slate-900/70 p-3.5 rounded-2xl border border-slate-800 text-center">
+          <div class="text-[11px] uppercase text-slate-400">Dataset Records</div>
+          <div id="analytics-modal-records" class="text-xl font-bold text-blue-400 font-['Space_Grotesk']">1,250+</div>
+        </div>
+      </div>
+
+      <div class="space-y-3">
+        <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Feature Importance Ranking</h3>
+        
+        <div>
+          <div class="flex justify-between text-xs text-slate-300 mb-1">
+            <span>Location & City Index</span>
+            <span class="text-cyan-400 font-bold">42%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full chart-bar-fill" data-target-width="42%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-xs text-slate-300 mb-1">
+            <span>Total Carpet Area & Area/BHK</span>
+            <span class="text-cyan-400 font-bold">31%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full chart-bar-fill" data-target-width="31%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-xs text-slate-300 mb-1">
+            <span>Bedrooms & Bathrooms (BHK)</span>
+            <span class="text-cyan-400 font-bold">15%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full chart-bar-fill" data-target-width="15%"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-xs text-slate-300 mb-1">
+            <span>Property Type & Age</span>
+            <span class="text-cyan-400 font-bold">12%</span>
+          </div>
+          <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+            <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full chart-bar-fill" data-target-width="12%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

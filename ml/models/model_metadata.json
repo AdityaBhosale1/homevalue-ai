@@ -1,0 +1,25 @@
+{
+  "model_name": "Gradient Boosting (Tuned)",
+  "training_date": "2026-09-28T19:24:29.591517",
+  "dataset_type": "REAL",
+  "total_rows": 1250,
+  "clean_rows": 1250,
+  "features": [
+    "city",
+    "location",
+    "area_sqft",
+    "bhk",
+    "bathrooms",
+    "property_type",
+    "furnishing",
+    "parking",
+    "property_age",
+    "area_per_bhk",
+    "bathroom_per_bhk"
+  ],
+  "cv_r2_mean": 0.7866,
+  "test_r2": 0.8337,
+  "test_mae": 17.97,
+  "test_rmse": 27.12,
+  "test_mape": 20.3
+}

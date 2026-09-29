@@ -1,0 +1,73 @@
+{
+  "city_insights": {
+    "Bengaluru": {
+      "avg_price_lakhs": 107.27,
+      "avg_rate_sqft": 7860.43,
+      "total_properties": 165
+    },
+    "Chennai": {
+      "avg_price_lakhs": 99.2,
+      "avg_rate_sqft": 7426.63,
+      "total_properties": 149
+    },
+    "Delhi NCR": {
+      "avg_price_lakhs": 121.62,
+      "avg_rate_sqft": 8765.34,
+      "total_properties": 170
+    },
+    "Hyderabad": {
+      "avg_price_lakhs": 97.22,
+      "avg_rate_sqft": 7052.36,
+      "total_properties": 145
+    },
+    "Mumbai": {
+      "avg_price_lakhs": 228.39,
+      "avg_rate_sqft": 17064.15,
+      "total_properties": 156
+    },
+    "Nagpur": {
+      "avg_price_lakhs": 56.68,
+      "avg_rate_sqft": 4054.97,
+      "total_properties": 155
+    },
+    "Nashik": {
+      "avg_price_lakhs": 61.41,
+      "avg_rate_sqft": 4322.91,
+      "total_properties": 160
+    },
+    "Pune": {
+      "avg_price_lakhs": 87.89,
+      "avg_rate_sqft": 6346.0,
+      "total_properties": 150
+    }
+  },
+  "bhk_insights": {
+    "1": {
+      "avg_price_lakhs": 54.87,
+      "avg_area_sqft": 684.3
+    },
+    "2": {
+      "avg_price_lakhs": 91.41,
+      "avg_area_sqft": 1172.78
+    },
+    "3": {
+      "avg_price_lakhs": 123.07,
+      "avg_area_sqft": 1605.0
+    },
+    "4": {
+      "avg_price_lakhs": 160.82,
+      "avg_area_sqft": 2044.42
+    },
+    "5": {
+      "avg_price_lakhs": 216.89,
+      "avg_area_sqft": 2523.46
+    }
+  },
+  "property_type_distribution": {
+    "Apartment": 0.7488,
+    "Independent House": 0.1624,
+    "Villa": 0.0888
+  },
+  "overall_avg_rate_sqft": 7880.27,
+  "total_analyzed_properties": 1250
+}

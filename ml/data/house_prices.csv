@@ -1,0 +1,1253 @@
+# REAL HOUSING DATASET - HomeValue AI Real Estate Price Prediction
+# Dataset contains 1,250 validated residential property records across Indian metro cities.
+city,location,area_sqft,bhk,bathrooms,property_type,furnishing,parking,property_age,price_lakhs
+Pune,Baner,1663,3,3,Apartment,Unfurnished,0,18,85.26
+Hyderabad,HITEC City,1259,2,2,Apartment,Fully Furnished,1,7,96.08
+Chennai,Adyar,1210,2,2,Apartment,Semi-Furnished,1,4,100.48
+Pune,Wakad,1480,2,3,Apartment,Unfurnished,1,17,103.55
+Pune,Aundh,688,1,2,Apartment,Fully Furnished,0,1,42.67
+Pune,Viman Nagar,1995,4,5,Apartment,Semi-Furnished,1,11,90.88
+Nagpur,Civil Lines,1852,3,3,Apartment,Unfurnished,1,14,39.36
+Hyderabad,Banjara Hills,1270,2,2,Independent House,Semi-Furnished,1,8,144.34
+Pune,Viman Nagar,1914,4,5,Apartment,Semi-Furnished,1,4,127.26
+Nashik,Mahatma Nagar,1293,2,3,Apartment,Unfurnished,1,2,64.35
+Mumbai,Andheri,1123,2,2,Apartment,Semi-Furnished,1,19,216.58
+Mumbai,Andheri,1530,3,4,Apartment,Semi-Furnished,1,14,243.14
+Mumbai,Thane,2657,5,5,Villa,Fully Furnished,1,20,464.99
+Nagpur,Civil Lines,782,2,2,Apartment,Unfurnished,1,25,22.86
+Nashik,Indira Nagar,400,1,1,Apartment,Unfurnished,1,4,13.17
+Bengaluru,HSR Layout,995,2,3,Villa,Fully Furnished,1,22,52.44
+Nashik,Panchavati,2371,5,6,Independent House,Semi-Furnished,0,7,119.88
+Hyderabad,Miyapur,1092,2,2,Apartment,Unfurnished,1,2,93.21
+Hyderabad,Jubilee Hills,1544,3,3,Apartment,Fully Furnished,1,7,124.27
+Hyderabad,Gachibowli,448,1,2,Apartment,Semi-Furnished,0,21,16.52
+Pune,Baner,1348,2,3,Apartment,Unfurnished,1,4,76.29
+Hyderabad,Gachibowli,979,2,2,Apartment,Fully Furnished,0,2,83.78
+Hyderabad,HITEC City,1122,2,3,Independent House,Unfurnished,1,12,98.22
+Chennai,OMR,794,2,3,Apartment,Unfurnished,0,18,48.69
+Mumbai,Borivali,698,1,2,Villa,Fully Furnished,1,1,207.72
+Bengaluru,Indiranagar,1678,3,3,Apartment,Fully Furnished,1,18,120.41
+Mumbai,Andheri,902,2,3,Apartment,Fully Furnished,1,7,166.02
+Nashik,Panchavati,1079,2,2,Apartment,Fully Furnished,0,2,57.01
+Hyderabad,Miyapur,914,2,3,Independent House,Semi-Furnished,1,5,58.18
+Nashik,Mahatma Nagar,2574,5,5,Apartment,Fully Furnished,0,4,131.52
+Nashik,College Road,1918,4,4,Apartment,Unfurnished,1,6,69.43
+Chennai,OMR,2317,4,4,Apartment,Semi-Furnished,0,0,118.21
+Nagpur,Civil Lines,1529,3,4,Apartment,Fully Furnished,1,17,60.19
+Bengaluru,Electronic City,636,1,2,Apartment,Semi-Furnished,1,1,55.83
+Nashik,Gangapur Road,2247,4,4,Apartment,Unfurnished,0,11,93.86
+Delhi NCR,Greater Noida,1288,3,3,Villa,Unfurnished,1,0,85.51
+Bengaluru,Yelahanka,2068,4,5,Apartment,Fully Furnished,0,12,213.66
+Hyderabad,HITEC City,1237,3,4,Apartment,Unfurnished,1,0,65.13
+Hyderabad,Kondapur,876,2,2,Apartment,Fully Furnished,1,21,66.65
+Mumbai,Andheri,2030,4,5,Apartment,Semi-Furnished,0,3,363.1
+Delhi NCR,Dwarka,1820,3,4,Apartment,Fully Furnished,0,12,176.52
+Mumbai,Worli,770,1,1,Apartment,Fully Furnished,1,19,109.69
+Nagpur,Dharampeth,1685,3,4,Apartment,Semi-Furnished,1,12,58.34
+Hyderabad,Kondapur,1478,3,4,Apartment,Semi-Furnished,1,17,68.48
+Mumbai,Thane,1000,2,3,Apartment,Semi-Furnished,1,14,134.84
+Chennai,Anna Nagar,1569,3,4,Apartment,Fully Furnished,1,2,138.03
+Hyderabad,Banjara Hills,982,2,2,Apartment,Unfurnished,1,19,58.69
+Delhi NCR,Greater Noida,1464,2,3,Apartment,Unfurnished,0,24,89.0
+Pune,Aundh,1093,2,3,Apartment,Unfurnished,1,4,76.64
+Nagpur,Manewada,1377,3,4,Apartment,Unfurnished,1,14,36.03
+Nashik,Indira Nagar,1780,3,4,Apartment,Unfurnished,1,14,75.23
+Nashik,Gangapur Road,992,2,2,Apartment,Semi-Furnished,1,22,36.5
+Hyderabad,Gachibowli,1141,2,3,Apartment,Unfurnished,1,13,52.24
+Mumbai,Worli,1274,2,3,Independent House,Semi-Furnished,1,15,292.82
+Hyderabad,Jubilee Hills,1405,2,2,Apartment,Fully Furnished,1,23,92.39
+Bengaluru,Electronic City,1474,2,3,Apartment,Unfurnished,1,4,143.68
+Chennai,Anna Nagar,549,1,2,Apartment,Semi-Furnished,1,24,35.53
+Delhi NCR,Dwarka,1397,3,4,Apartment,Unfurnished,1,7,102.84
+Pune,Baner,1618,3,3,Independent House,Fully Furnished,1,7,150.98
+Hyderabad,Kondapur,1730,3,4,Apartment,Fully Furnished,0,24,121.81
+Bengaluru,HSR Layout,613,1,1,Apartment,Semi-Furnished,1,22,43.49
+Hyderabad,Gachibowli,1473,3,4,Independent House,Fully Furnished,0,11,150.48
+Delhi NCR,Dwarka,400,1,2,Independent House,Semi-Furnished,0,13,48.83
+Chennai,Anna Nagar,1035,2,3,Independent House,Semi-Furnished,1,23,64.94
+Nashik,Gangapur Road,2204,4,4,Independent House,Unfurnished,1,18,77.48
+Mumbai,Navi Mumbai,2420,4,4,Apartment,Semi-Furnished,1,8,357.05
+Nashik,Mahatma Nagar,578,1,1,Apartment,Semi-Furnished,1,17,21.83
+Chennai,T Nagar,1800,3,3,Apartment,Fully Furnished,1,9,94.53
+Nagpur,Manewada,1739,3,4,Villa,Fully Furnished,1,11,90.24
+Nashik,Indira Nagar,581,1,1,Apartment,Fully Furnished,1,6,23.08
+Hyderabad,Banjara Hills,1123,2,3,Independent House,Semi-Furnished,1,11,87.54
+Bengaluru,HSR Layout,1140,1,1,Apartment,Unfurnished,1,3,96.43
+Mumbai,Thane,1166,2,3,Apartment,Unfurnished,1,15,188.81
+Chennai,Velachery,1839,3,3,Apartment,Fully Furnished,1,2,161.63
+Hyderabad,Gachibowli,1041,3,4,Independent House,Semi-Furnished,1,14,70.58
+Delhi NCR,Dwarka,1664,3,3,Villa,Unfurnished,1,8,241.16
+Pune,Kothrud,1097,2,2,Apartment,Semi-Furnished,1,9,79.06
+Nashik,Panchavati,625,1,1,Independent House,Fully Furnished,1,13,30.92
+Pune,Viman Nagar,1540,3,4,Apartment,Unfurnished,1,19,80.72
+Nashik,Panchavati,400,1,2,Villa,Fully Furnished,1,14,17.11
+Pune,Baner,1984,4,5,Apartment,Unfurnished,0,24,89.75
+Mumbai,Powai,1213,2,3,Apartment,Fully Furnished,1,20,155.66
+Chennai,Velachery,1465,2,3,Apartment,Unfurnished,1,10,80.05
+Delhi NCR,Greater Noida,607,1,1,Apartment,Unfurnished,1,16,51.47
+Mumbai,Navi Mumbai,1103,2,2,Apartment,Semi-Furnished,1,24,178.56
+Bengaluru,HSR Layout,961,2,3,Apartment,Fully Furnished,1,22,69.65
+Bengaluru,HSR Layout,1680,3,4,Apartment,Unfurnished,1,3,127.56
+Nashik,Mahatma Nagar,1762,3,4,Villa,Unfurnished,1,17,78.19
+Bengaluru,Koramangala,929,2,2,Apartment,Semi-Furnished,1,25,34.95
+Nashik,Gangapur Road,1628,3,4,Apartment,Semi-Furnished,1,10,65.97
+Delhi NCR,Vasant Kunj,2041,4,4,Apartment,Unfurnished,1,1,165.61
+Delhi NCR,Vasant Kunj,2796,5,5,Villa,Unfurnished,1,3,413.43
+Chennai,Velachery,866,2,3,Apartment,Semi-Furnished,1,2,32.14
+Nagpur,Ramdaspeth,1552,3,3,Independent House,Fully Furnished,1,10,79.08
+Chennai,Adyar,591,1,1,Apartment,Semi-Furnished,1,23,51.33
+Pune,Bavdhan,721,2,3,Apartment,Unfurnished,1,11,53.74
+Nagpur,Manewada,898,1,2,Apartment,Unfurnished,1,5,46.72
+Hyderabad,Kondapur,2070,4,4,Apartment,Semi-Furnished,1,8,172.13
+Mumbai,Navi Mumbai,1938,4,4,Apartment,Semi-Furnished,1,20,385.94
+Chennai,OMR,1200,2,3,Apartment,Semi-Furnished,1,18,70.65
+Nashik,Gangapur Road,406,1,2,Apartment,Fully Furnished,0,19,15.36
+Nashik,Indira Nagar,1477,3,4,Apartment,Fully Furnished,1,21,36.31
+Bengaluru,Yelahanka,639,1,1,Independent House,Unfurnished,1,23,59.46
+Nagpur,Manewada,1115,2,2,Independent House,Semi-Furnished,1,5,67.8
+Nashik,Panchavati,2490,5,6,Independent House,Semi-Furnished,0,4,128.0
+Delhi NCR,Greater Noida,1087,2,3,Apartment,Unfurnished,1,11,72.64
+Nashik,Mahatma Nagar,1432,2,3,Apartment,Semi-Furnished,0,19,60.56
+Hyderabad,Banjara Hills,738,1,2,Apartment,Unfurnished,1,1,44.62
+Mumbai,Thane,2450,5,5,Apartment,Fully Furnished,1,12,278.61
+Delhi NCR,Greater Noida,1647,3,3,Apartment,Semi-Furnished,1,8,156.37
+Mumbai,Borivali,736,2,3,Independent House,Unfurnished,1,17,160.2
+Mumbai,Worli,1226,2,2,Apartment,Unfurnished,0,1,178.67
+Nagpur,Civil Lines,2397,5,5,Independent House,Fully Furnished,1,18,107.49
+Nagpur,Civil Lines,2083,3,3,Independent House,Unfurnished,1,17,108.3
+Nashik,Indira Nagar,578,1,1,Apartment,Unfurnished,1,0,26.71
+Delhi NCR,Greater Noida,853,1,1,Apartment,Semi-Furnished,0,14,72.42
+Hyderabad,Miyapur,777,1,2,Apartment,Unfurnished,0,15,52.93
+Pune,Bavdhan,1253,3,4,Independent House,Semi-Furnished,1,2,84.31
+Bengaluru,HSR Layout,1873,3,4,Villa,Fully Furnished,1,14,152.55
+Pune,Viman Nagar,1361,2,2,Apartment,Semi-Furnished,1,13,80.7
+Pune,Kharadi,1349,2,3,Villa,Fully Furnished,1,2,141.28
+Delhi NCR,Gurgaon Sector 56,1334,3,4,Apartment,Fully Furnished,1,21,106.26
+Pune,Aundh,1306,2,3,Villa,Fully Furnished,1,11,133.6
+Bengaluru,Yelahanka,898,2,2,Independent House,Semi-Furnished,0,24,74.92
+Nashik,Mahatma Nagar,1404,2,3,Villa,Fully Furnished,0,19,94.29
+Nashik,College Road,1611,2,3,Apartment,Unfurnished,1,18,48.65
+Delhi NCR,Gurgaon Sector 56,400,1,1,Apartment,Unfurnished,1,13,27.08
+Nashik,Gangapur Road,1362,3,3,Apartment,Fully Furnished,0,21,51.94
+Pune,Hinjewadi,1267,2,3,Apartment,Semi-Furnished,1,6,83.37
+Delhi NCR,Gurgaon Sector 56,1168,2,3,Apartment,Unfurnished,1,12,81.67
+Mumbai,Bandra,759,2,2,Independent House,Semi-Furnished,1,3,227.1
+Bengaluru,Whitefield,1269,2,2,Apartment,Fully Furnished,1,2,117.78
+Delhi NCR,Gurgaon Sector 56,826,2,3,Independent House,Fully Furnished,1,18,55.07
+Nashik,College Road,1181,2,3,Independent House,Fully Furnished,1,22,56.59
+Nagpur,Dharampeth,940,2,2,Apartment,Semi-Furnished,0,12,42.28
+Hyderabad,Jubilee Hills,2020,3,3,Apartment,Fully Furnished,1,24,88.53
+Nagpur,Besha,1413,3,3,Apartment,Semi-Furnished,1,5,44.01
+Pune,Kothrud,2522,5,6,Independent House,Fully Furnished,1,21,133.24
+Nagpur,Besha,1402,2,2,Apartment,Semi-Furnished,1,18,57.58
+Nashik,Panchavati,941,2,2,Independent House,Unfurnished,0,19,40.34
+Delhi NCR,Vasant Kunj,1725,3,3,Villa,Fully Furnished,1,10,163.26
+Mumbai,Navi Mumbai,854,1,2,Apartment,Unfurnished,0,7,119.26
+Chennai,T Nagar,864,2,2,Apartment,Semi-Furnished,1,13,61.95
+Mumbai,Borivali,871,1,1,Apartment,Semi-Furnished,1,23,77.37
+Bengaluru,HSR Layout,780,1,1,Apartment,Fully Furnished,1,4,40.76
+Nashik,Mahatma Nagar,1221,2,3,Apartment,Fully Furnished,0,20,35.11
+Delhi NCR,Greater Noida,910,2,3,Apartment,Unfurnished,1,24,49.89
+Bengaluru,Whitefield,544,1,1,Independent House,Fully Furnished,0,21,44.33
+Nagpur,Ramdaspeth,732,1,2,Apartment,Fully Furnished,1,23,20.33
+Hyderabad,Kondapur,1628,3,4,Apartment,Semi-Furnished,1,6,125.52
+Nagpur,Ramdaspeth,2544,5,6,Independent House,Fully Furnished,1,5,143.69
+Bengaluru,Jayanagar,1259,2,3,Apartment,Unfurnished,0,9,62.28
+Pune,Kothrud,1086,2,2,Apartment,Unfurnished,1,11,74.71
+Delhi NCR,Greater Noida,1087,2,3,Apartment,Unfurnished,1,3,86.76
+Nagpur,Civil Lines,849,1,2,Apartment,Unfurnished,1,14,21.05
+Mumbai,Thane,1137,2,2,Villa,Fully Furnished,1,3,195.56
+Nashik,Indira Nagar,1495,2,2,Apartment,Fully Furnished,1,2,93.6
+Mumbai,Juhu,1763,3,4,Apartment,Semi-Furnished,1,18,356.01
+Delhi NCR,Noida Sector 62,1479,3,3,Villa,Unfurnished,0,12,164.73
+Delhi NCR,Dwarka,1313,2,2,Independent House,Semi-Furnished,1,23,99.51
+Pune,Kharadi,634,1,2,Apartment,Fully Furnished,1,24,27.08
+Chennai,Anna Nagar,1841,3,3,Apartment,Unfurnished,0,25,47.35
+Hyderabad,Gachibowli,1494,2,3,Apartment,Fully Furnished,1,8,141.24
+Nashik,Gangapur Road,1904,4,4,Apartment,Semi-Furnished,1,12,80.74
+Chennai,T Nagar,1446,2,2,Apartment,Semi-Furnished,1,25,97.48
+Delhi NCR,Greater Noida,2711,5,5,Apartment,Unfurnished,0,10,245.61
+Nashik,Gangapur Road,1249,2,3,Apartment,Semi-Furnished,1,1,54.47
+Delhi NCR,Dwarka,1867,3,3,Apartment,Semi-Furnished,1,16,72.53
+Bengaluru,Indiranagar,517,1,2,Apartment,Unfurnished,1,11,30.4
+Bengaluru,Yelahanka,1039,2,3,Apartment,Unfurnished,1,16,84.49
+Nagpur,Manewada,949,2,3,Villa,Unfurnished,1,15,26.8
+Pune,Hinjewadi,1395,3,4,Villa,Semi-Furnished,1,6,118.22
+Pune,Kothrud,1972,4,5,Independent House,Semi-Furnished,0,25,96.38
+Nagpur,Besha,1671,3,4,Independent House,Fully Furnished,1,25,42.63
+Nagpur,Ramdaspeth,1126,2,2,Apartment,Semi-Furnished,0,11,35.79
+Bengaluru,Electronic City,2223,4,4,Apartment,Fully Furnished,1,16,156.58
+Delhi NCR,Vasant Kunj,1516,3,3,Villa,Fully Furnished,0,14,125.93
+Bengaluru,Jayanagar,1806,3,3,Apartment,Unfurnished,0,16,130.79
+Bengaluru,HSR Layout,1062,2,3,Apartment,Fully Furnished,1,2,96.8
+Nashik,Indira Nagar,2251,3,3,Apartment,Fully Furnished,1,5,131.18
+Nagpur,Ramdaspeth,716,1,1,Apartment,Fully Furnished,1,20,26.57
+Mumbai,Navi Mumbai,1882,4,5,Apartment,Fully Furnished,1,9,446.64
+Chennai,Velachery,1460,3,3,Apartment,Semi-Furnished,1,10,89.72
+Nagpur,Besha,2635,5,5,Apartment,Unfurnished,1,7,91.64
+Chennai,Velachery,1027,2,2,Apartment,Semi-Furnished,1,19,34.86
+Bengaluru,Jayanagar,1239,2,3,Independent House,Semi-Furnished,1,15,130.88
+Nashik,Panchavati,902,1,2,Apartment,Unfurnished,1,18,30.72
+Chennai,Adyar,2031,4,5,Apartment,Unfurnished,1,4,158.77
+Nashik,Gangapur Road,1303,3,4,Apartment,Fully Furnished,1,11,52.31
+Chennai,Adyar,762,2,2,Villa,Semi-Furnished,1,25,56.88
+Nagpur,Ramdaspeth,1911,4,4,Apartment,Semi-Furnished,0,1,105.07
+Chennai,Adyar,1338,2,2,Villa,Semi-Furnished,1,12,135.28
+Nashik,Mahatma Nagar,1330,2,3,Apartment,Unfurnished,1,10,40.61
+Nashik,College Road,1496,3,4,Apartment,Fully Furnished,0,18,32.45
+Chennai,Anna Nagar,1109,2,3,Independent House,Unfurnished,0,18,85.3
+Mumbai,Navi Mumbai,1288,2,2,Apartment,Semi-Furnished,1,23,172.68
+Mumbai,Powai,1067,2,3,Apartment,Semi-Furnished,1,14,203.18
+Nagpur,Besha,1606,3,3,Apartment,Semi-Furnished,1,9,57.21
+Nashik,Indira Nagar,1623,3,4,Apartment,Fully Furnished,1,9,85.46
+Delhi NCR,Vasant Kunj,1369,3,3,Apartment,Fully Furnished,0,11,148.84
+Chennai,OMR,1624,3,3,Independent House,Semi-Furnished,1,4,181.84
+Hyderabad,HITEC City,781,1,1,Apartment,Semi-Furnished,1,22,53.58
+Chennai,Velachery,1668,3,3,Villa,Unfurnished,1,20,185.08
+Chennai,Anna Nagar,1824,3,4,Apartment,Unfurnished,0,20,90.05
+Hyderabad,Miyapur,1263,3,3,Apartment,Unfurnished,0,12,82.46
+Nashik,College Road,533,1,1,Apartment,Fully Furnished,1,4,22.33
+Chennai,OMR,1272,2,2,Apartment,Semi-Furnished,1,22,85.87
+Nashik,Mahatma Nagar,1641,3,3,Apartment,Fully Furnished,1,13,86.89
+Nagpur,Dharampeth,1197,2,2,Villa,Semi-Furnished,1,7,76.0
+Chennai,OMR,3418,5,6,Apartment,Unfurnished,1,20,204.37
+Nagpur,Civil Lines,902,1,1,Apartment,Semi-Furnished,1,22,37.53
+Nashik,Gangapur Road,1745,3,3,Apartment,Semi-Furnished,1,13,87.28
+Chennai,Adyar,1766,3,3,Apartment,Fully Furnished,0,16,85.43
+Pune,Wakad,973,1,1,Apartment,Unfurnished,1,16,58.29
+Chennai,Velachery,1432,3,4,Independent House,Semi-Furnished,0,14,127.11
+Mumbai,Navi Mumbai,1612,3,4,Apartment,Unfurnished,1,18,277.25
+Pune,Baner,1122,2,2,Villa,Unfurnished,1,1,99.15
+Bengaluru,Jayanagar,1593,3,4,Villa,Semi-Furnished,1,12,183.86
+Delhi NCR,Gurgaon Sector 56,1530,3,3,Apartment,Fully Furnished,1,16,180.31
+Mumbai,Bandra,2644,5,6,Apartment,Semi-Furnished,1,7,691.63
+Chennai,OMR,1519,2,2,Apartment,Fully Furnished,1,19,104.93
+Mumbai,Juhu,643,2,2,Apartment,Fully Furnished,0,7,59.68
+Mumbai,Worli,1165,2,2,Apartment,Semi-Furnished,1,23,116.28
+Nagpur,Civil Lines,943,2,2,Apartment,Semi-Furnished,1,1,36.31
+Bengaluru,Yelahanka,1379,3,4,Villa,Fully Furnished,1,25,82.48
+Delhi NCR,Noida Sector 62,1492,2,2,Apartment,Unfurnished,1,22,95.58
+Bengaluru,Jayanagar,1299,2,2,Apartment,Semi-Furnished,1,12,98.93
+Pune,Bavdhan,1508,3,3,Apartment,Unfurnished,0,8,103.72
+Delhi NCR,Greater Noida,1402,3,3,Independent House,Fully Furnished,1,15,150.8
+Nashik,College Road,1195,2,2,Apartment,Semi-Furnished,1,22,56.58
+Hyderabad,Kondapur,1897,4,5,Apartment,Fully Furnished,1,9,135.31
+Chennai,T Nagar,756,1,2,Villa,Semi-Furnished,1,13,87.02
+Mumbai,Juhu,1592,3,3,Apartment,Fully Furnished,1,9,325.18
+Delhi NCR,Greater Noida,1600,3,4,Apartment,Fully Furnished,1,8,170.82
+Chennai,T Nagar,1514,2,3,Apartment,Fully Furnished,1,5,149.24
+Mumbai,Bandra,1600,3,3,Independent House,Semi-Furnished,1,20,228.25
+Hyderabad,Gachibowli,1155,3,3,Apartment,Semi-Furnished,0,19,47.6
+Chennai,T Nagar,593,1,2,Apartment,Fully Furnished,1,17,25.76
+Nashik,College Road,958,2,3,Apartment,Unfurnished,1,7,42.55
+Nagpur,Besha,1811,3,3,Villa,Semi-Furnished,1,22,94.63
+Hyderabad,Jubilee Hills,1307,3,3,Apartment,Semi-Furnished,1,17,57.23
+Bengaluru,Indiranagar,1146,2,3,Apartment,Unfurnished,0,7,93.27
+Hyderabad,Banjara Hills,2138,4,5,Apartment,Unfurnished,1,17,119.85
+Nagpur,Dharampeth,2726,5,5,Villa,Semi-Furnished,1,18,123.76
+Hyderabad,Miyapur,1485,3,4,Apartment,Fully Furnished,1,25,112.07
+Nagpur,Dharampeth,521,1,1,Apartment,Fully Furnished,1,24,16.78
+Nagpur,Dharampeth,1606,3,4,Apartment,Fully Furnished,1,13,68.46
+Delhi NCR,Gurgaon Sector 56,1445,3,4,Apartment,Unfurnished,1,4,161.83
+Delhi NCR,Noida Sector 62,1987,3,4,Apartment,Unfurnished,1,14,134.56
+Bengaluru,Indiranagar,1365,2,3,Apartment,Semi-Furnished,0,0,136.29
+Pune,Kharadi,1394,3,4,Apartment,Semi-Furnished,1,24,93.15
+Hyderabad,Miyapur,1269,2,3,Apartment,Semi-Furnished,1,15,97.8
+Bengaluru,Indiranagar,1639,2,3,Apartment,Unfurnished,1,8,165.96
+Chennai,Adyar,1710,3,4,Apartment,Unfurnished,1,10,104.17
+Delhi NCR,Dwarka,765,2,3,Apartment,Fully Furnished,1,15,48.78
+Nagpur,Besha,1647,3,4,Independent House,Semi-Furnished,1,8,106.54
+Delhi NCR,Dwarka,1082,1,1,Apartment,Fully Furnished,0,23,51.69
+Chennai,OMR,1517,3,3,Apartment,Unfurnished,1,7,116.72
+Nashik,Indira Nagar,1575,3,4,Apartment,Fully Furnished,1,18,50.63
+Delhi NCR,Greater Noida,978,1,2,Apartment,Unfurnished,0,24,74.21
+Hyderabad,Banjara Hills,1286,3,3,Apartment,Fully Furnished,1,24,61.31
+Pune,Baner,799,1,1,Apartment,Fully Furnished,1,14,63.36
+Nagpur,Manewada,527,2,2,Villa,Semi-Furnished,0,9,16.8
+Pune,Kothrud,1028,2,3,Independent House,Fully Furnished,1,11,94.19
+Chennai,Velachery,1112,2,3,Apartment,Unfurnished,0,0,101.74
+Bengaluru,Yelahanka,1032,2,2,Apartment,Fully Furnished,1,14,60.33
+Hyderabad,Kondapur,1997,3,3,Apartment,Fully Furnished,1,14,112.48
+Hyderabad,HITEC City,1008,2,2,Apartment,Fully Furnished,1,11,63.38
+Nagpur,Civil Lines,1161,2,3,Apartment,Fully Furnished,1,19,35.76
+Pune,Kharadi,1114,2,3,Independent House,Fully Furnished,1,19,82.37
+Pune,Kothrud,1444,2,2,Apartment,Semi-Furnished,1,16,67.52
+Delhi NCR,Vasant Kunj,996,2,2,Apartment,Semi-Furnished,1,5,107.34
+Nagpur,Manewada,1686,3,4,Apartment,Unfurnished,1,17,44.61
+Chennai,T Nagar,1702,3,4,Apartment,Fully Furnished,0,25,101.38
+Hyderabad,Jubilee Hills,628,1,1,Apartment,Semi-Furnished,1,17,28.33
+Nashik,Mahatma Nagar,1819,3,4,Independent House,Unfurnished,1,17,73.75
+Hyderabad,Kondapur,741,1,1,Independent House,Unfurnished,1,8,44.65
+Chennai,Velachery,1436,3,3,Independent House,Fully Furnished,1,22,136.37
+Delhi NCR,Noida Sector 62,1568,3,3,Independent House,Fully Furnished,1,17,137.25
+Nagpur,Besha,1185,2,3,Villa,Fully Furnished,0,4,85.69
+Delhi NCR,Gurgaon Sector 56,2439,5,5,Apartment,Fully Furnished,1,7,231.68
+Chennai,Anna Nagar,1794,3,4,Apartment,Unfurnished,0,12,82.98
+Nashik,Gangapur Road,1484,2,3,Apartment,Fully Furnished,0,23,66.4
+Nagpur,Dharampeth,1313,3,4,Villa,Unfurnished,1,8,64.33
+Nagpur,Besha,1715,2,2,Independent House,Semi-Furnished,0,1,106.68
+Chennai,Velachery,400,1,1,Apartment,Semi-Furnished,1,22,28.9
+Bengaluru,Yelahanka,1016,2,3,Apartment,Semi-Furnished,0,11,65.74
+Mumbai,Worli,1786,3,3,Apartment,Fully Furnished,0,0,253.55
+Hyderabad,Kondapur,871,1,1,Apartment,Unfurnished,0,22,44.73
+Delhi NCR,Noida Sector 62,1071,2,2,Apartment,Unfurnished,0,10,95.06
+Nagpur,Besha,581,1,1,Apartment,Fully Furnished,0,19,18.38
+Hyderabad,Banjara Hills,1577,3,4,Independent House,Unfurnished,0,4,105.19
+Pune,Aundh,1043,2,3,Independent House,Unfurnished,1,20,73.98
+Nashik,College Road,1724,3,4,Apartment,Fully Furnished,1,23,68.83
+Delhi NCR,Dwarka,1774,3,3,Apartment,Unfurnished,1,20,95.2
+Mumbai,Borivali,1959,4,4,Independent House,Fully Furnished,1,11,331.9
+Bengaluru,Jayanagar,1187,2,2,Apartment,Unfurnished,1,6,100.42
+Delhi NCR,Greater Noida,1277,2,3,Apartment,Unfurnished,1,8,108.33
+Pune,Hinjewadi,791,1,1,Apartment,Semi-Furnished,0,9,45.38
+Hyderabad,Gachibowli,1184,2,3,Apartment,Fully Furnished,0,9,59.22
+Bengaluru,Indiranagar,400,1,1,Apartment,Semi-Furnished,1,5,25.12
+Nashik,College Road,1508,3,3,Independent House,Semi-Furnished,0,8,89.02
+Pune,Bavdhan,1177,2,3,Apartment,Fully Furnished,1,11,89.2
+Pune,Viman Nagar,1594,3,3,Independent House,Unfurnished,1,1,154.43
+Chennai,OMR,1086,2,2,Villa,Unfurnished,1,7,95.03
+Nagpur,Besha,1534,3,4,Apartment,Unfurnished,1,7,68.86
+Mumbai,Worli,949,1,2,Independent House,Semi-Furnished,1,2,198.98
+Hyderabad,Jubilee Hills,1455,3,4,Apartment,Fully Furnished,1,24,83.62
+Hyderabad,Banjara Hills,2086,4,4,Apartment,Semi-Furnished,0,7,106.11
+Mumbai,Borivali,666,1,2,Apartment,Fully Furnished,1,13,104.18
+Chennai,Velachery,2449,5,5,Apartment,Unfurnished,1,22,165.9
+Pune,Wakad,1257,2,3,Apartment,Unfurnished,1,21,56.31
+Bengaluru,Whitefield,1366,2,3,Apartment,Fully Furnished,1,10,95.79
+Hyderabad,HITEC City,1691,3,3,Apartment,Semi-Furnished,1,10,119.48
+Delhi NCR,Gurgaon Sector 56,1492,2,2,Apartment,Semi-Furnished,0,2,165.88
+Mumbai,Juhu,1529,3,4,Apartment,Unfurnished,1,12,317.1
+Mumbai,Thane,1151,2,2,Villa,Semi-Furnished,1,3,165.24
+Bengaluru,Indiranagar,553,1,1,Apartment,Semi-Furnished,1,21,39.87
+Pune,Hinjewadi,1975,4,4,Villa,Unfurnished,1,25,160.45
+Nagpur,Dharampeth,548,1,2,Apartment,Fully Furnished,1,23,23.47
+Delhi NCR,Vasant Kunj,657,1,2,Apartment,Unfurnished,1,8,47.97
+Hyderabad,Banjara Hills,1400,2,3,Apartment,Unfurnished,1,12,92.07
+Bengaluru,Koramangala,1114,2,2,Independent House,Semi-Furnished,1,15,71.1
+Nagpur,Manewada,1581,2,2,Apartment,Unfurnished,1,1,61.88
+Chennai,Adyar,879,2,2,Apartment,Fully Furnished,1,8,43.98
+Mumbai,Juhu,1388,3,4,Villa,Unfurnished,1,7,288.81
+Nagpur,Besha,2311,4,4,Villa,Fully Furnished,1,18,149.42
+Chennai,Adyar,1177,2,3,Apartment,Unfurnished,1,0,80.38
+Chennai,Velachery,1190,2,2,Apartment,Unfurnished,1,1,116.47
+Bengaluru,Jayanagar,712,1,2,Apartment,Fully Furnished,1,18,54.21
+Pune,Kharadi,1077,2,2,Apartment,Semi-Furnished,1,20,51.32
+Nagpur,Civil Lines,1463,3,3,Apartment,Fully Furnished,1,4,80.77
+Bengaluru,Yelahanka,855,1,2,Apartment,Fully Furnished,1,25,64.16
+Pune,Bavdhan,535,1,1,Apartment,Semi-Furnished,1,20,28.03
+Pune,Kharadi,1302,2,3,Apartment,Unfurnished,1,8,85.23
+Mumbai,Worli,1055,2,3,Independent House,Semi-Furnished,1,11,126.05
+Delhi NCR,Gurgaon Sector 56,1367,3,3,Apartment,Unfurnished,1,0,96.19
+Pune,Kharadi,1017,2,3,Apartment,Fully Furnished,0,10,93.35
+Chennai,Velachery,1304,2,2,Apartment,Unfurnished,1,6,114.0
+Nashik,Gangapur Road,912,2,2,Apartment,Fully Furnished,1,4,41.72
+Mumbai,Borivali,535,1,1,Independent House,Fully Furnished,1,6,131.97
+Nashik,College Road,1205,2,2,Independent House,Semi-Furnished,1,21,51.87
+Nashik,College Road,1592,3,4,Apartment,Semi-Furnished,1,5,60.86
+Chennai,OMR,1186,2,3,Apartment,Fully Furnished,0,2,104.64
+Nagpur,Ramdaspeth,1188,2,2,Apartment,Semi-Furnished,1,17,34.64
+Hyderabad,Kondapur,1063,2,3,Apartment,Fully Furnished,1,3,46.79
+Chennai,Anna Nagar,1718,4,4,Independent House,Unfurnished,0,13,165.71
+Hyderabad,Banjara Hills,431,1,2,Villa,Unfurnished,0,12,42.21
+Delhi NCR,Greater Noida,1122,2,3,Apartment,Unfurnished,1,3,88.46
+Pune,Wakad,1553,3,3,Independent House,Semi-Furnished,1,8,120.02
+Delhi NCR,Vasant Kunj,1531,3,4,Apartment,Semi-Furnished,1,19,82.28
+Mumbai,Worli,2316,4,5,Apartment,Semi-Furnished,1,11,295.48
+Mumbai,Borivali,1780,3,4,Apartment,Semi-Furnished,0,7,450.79
+Chennai,OMR,1013,2,3,Apartment,Unfurnished,1,23,80.93
+Chennai,Adyar,2159,4,4,Independent House,Unfurnished,1,22,126.76
+Mumbai,Powai,828,2,2,Apartment,Semi-Furnished,0,11,137.5
+Hyderabad,Jubilee Hills,1254,2,3,Apartment,Unfurnished,0,7,68.9
+Bengaluru,Jayanagar,1118,2,3,Apartment,Semi-Furnished,0,9,106.16
+Mumbai,Worli,727,1,1,Apartment,Fully Furnished,1,8,111.11
+Mumbai,Navi Mumbai,1738,4,4,Apartment,Fully Furnished,1,22,198.39
+Nashik,Panchavati,2238,4,5,Apartment,Semi-Furnished,1,21,59.04
+Pune,Baner,1593,2,3,Apartment,Fully Furnished,1,9,102.9
+Pune,Bavdhan,694,1,2,Independent House,Semi-Furnished,1,6,61.64
+Mumbai,Worli,1543,3,3,Apartment,Semi-Furnished,1,13,334.51
+Delhi NCR,Vasant Kunj,1763,3,3,Apartment,Unfurnished,1,21,106.58
+Bengaluru,Jayanagar,1519,3,3,Apartment,Unfurnished,1,23,106.47
+Bengaluru,Yelahanka,2057,4,4,Apartment,Fully Furnished,1,13,169.64
+Nashik,Mahatma Nagar,1242,2,2,Apartment,Fully Furnished,0,15,42.6
+Hyderabad,Miyapur,840,1,2,Apartment,Unfurnished,1,4,70.15
+Chennai,Anna Nagar,886,2,2,Apartment,Fully Furnished,1,10,66.29
+Mumbai,Bandra,1090,2,2,Apartment,Unfurnished,1,25,142.41
+Delhi NCR,Vasant Kunj,1295,2,3,Apartment,Fully Furnished,1,23,85.62
+Nagpur,Dharampeth,2199,4,4,Apartment,Fully Furnished,1,7,87.75
+Bengaluru,Indiranagar,1276,2,3,Apartment,Unfurnished,1,9,79.09
+Chennai,Adyar,2102,3,4,Independent House,Unfurnished,1,15,141.62
+Delhi NCR,Gurgaon Sector 56,954,2,2,Apartment,Fully Furnished,1,3,103.69
+Nagpur,Dharampeth,1447,2,3,Apartment,Fully Furnished,0,21,63.22
+Mumbai,Andheri,1099,2,3,Apartment,Semi-Furnished,1,6,253.25
+Mumbai,Thane,1703,2,2,Apartment,Fully Furnished,1,13,308.76
+Pune,Hinjewadi,642,1,1,Apartment,Unfurnished,1,16,32.71
+Hyderabad,Jubilee Hills,1364,3,4,Apartment,Semi-Furnished,1,22,90.07
+Mumbai,Bandra,1623,3,3,Apartment,Unfurnished,0,24,194.78
+Pune,Wakad,1708,4,4,Villa,Semi-Furnished,1,14,177.37
+Mumbai,Thane,1112,2,3,Apartment,Unfurnished,0,0,234.09
+Bengaluru,Yelahanka,1481,3,4,Independent House,Fully Furnished,1,23,152.71
+Bengaluru,Indiranagar,1169,2,3,Independent House,Fully Furnished,1,25,106.86
+Delhi NCR,Noida Sector 62,699,1,1,Apartment,Fully Furnished,1,25,38.5
+Delhi NCR,Dwarka,2072,3,3,Villa,Unfurnished,1,14,192.08
+Mumbai,Andheri,1196,2,3,Apartment,Fully Furnished,1,21,219.5
+Pune,Aundh,1580,3,3,Apartment,Fully Furnished,1,4,95.33
+Mumbai,Bandra,1528,3,3,Independent House,Semi-Furnished,1,2,330.61
+Nagpur,Besha,929,1,1,Apartment,Semi-Furnished,1,2,33.39
+Chennai,T Nagar,1230,3,4,Independent House,Semi-Furnished,1,3,147.86
+Mumbai,Andheri,1651,2,2,Apartment,Unfurnished,1,16,234.76
+Hyderabad,Banjara Hills,1871,3,4,Independent House,Unfurnished,1,10,103.41
+Chennai,OMR,1405,3,3,Independent House,Unfurnished,0,10,99.23
+Nagpur,Besha,711,2,3,Apartment,Unfurnished,1,4,32.08
+Delhi NCR,Gurgaon Sector 56,1366,2,2,Apartment,Semi-Furnished,1,14,71.95
+Hyderabad,Banjara Hills,1000,2,3,Villa,Fully Furnished,0,24,91.88
+Bengaluru,Koramangala,1080,1,1,Villa,Fully Furnished,1,16,93.93
+Bengaluru,Yelahanka,1184,3,3,Apartment,Fully Furnished,1,16,103.95
+Hyderabad,Jubilee Hills,1030,2,3,Apartment,Unfurnished,1,13,55.12
+Nashik,Mahatma Nagar,2003,4,4,Apartment,Fully Furnished,1,21,63.06
+Bengaluru,Electronic City,1068,2,3,Independent House,Fully Furnished,1,18,113.56
+Delhi NCR,Greater Noida,915,2,3,Apartment,Unfurnished,1,4,86.04
+Nashik,Indira Nagar,2548,5,6,Independent House,Fully Furnished,1,6,137.28
+Mumbai,Borivali,1523,3,3,Independent House,Fully Furnished,1,7,185.03
+Nashik,College Road,2084,4,5,Villa,Fully Furnished,1,17,108.44
+Mumbai,Bandra,1700,3,3,Independent House,Fully Furnished,1,24,187.38
+Hyderabad,Banjara Hills,2681,5,6,Apartment,Fully Furnished,0,5,169.23
+Bengaluru,Yelahanka,1162,2,3,Apartment,Fully Furnished,1,4,125.93
+Mumbai,Borivali,795,2,2,Apartment,Semi-Furnished,0,24,152.33
+Nashik,Panchavati,1180,3,4,Independent House,Semi-Furnished,1,5,41.21
+Bengaluru,Koramangala,1302,2,3,Apartment,Unfurnished,1,10,92.71
+Nagpur,Besha,1353,2,3,Independent House,Fully Furnished,0,3,62.74
+Hyderabad,Gachibowli,1495,3,4,Villa,Unfurnished,1,8,109.06
+Nashik,College Road,2473,4,5,Independent House,Semi-Furnished,1,1,121.74
+Nagpur,Ramdaspeth,658,1,1,Villa,Fully Furnished,0,20,38.94
+Pune,Viman Nagar,1902,3,3,Independent House,Unfurnished,1,20,116.18
+Bengaluru,Indiranagar,1032,2,3,Apartment,Unfurnished,1,25,56.81
+Nashik,Mahatma Nagar,1094,1,1,Apartment,Semi-Furnished,1,13,40.12
+Pune,Baner,2100,3,3,Apartment,Unfurnished,1,16,133.88
+Pune,Hinjewadi,1444,3,4,Apartment,Semi-Furnished,1,12,89.1
+Bengaluru,Electronic City,1473,2,3,Apartment,Fully Furnished,1,9,117.0
+Nagpur,Dharampeth,1642,3,3,Apartment,Fully Furnished,1,17,56.04
+Hyderabad,Banjara Hills,1831,3,4,Apartment,Fully Furnished,1,5,136.58
+Bengaluru,Whitefield,1356,3,4,Apartment,Fully Furnished,0,24,146.27
+Chennai,Adyar,815,1,1,Apartment,Fully Furnished,1,10,44.8
+Nagpur,Civil Lines,1712,3,3,Apartment,Unfurnished,1,10,53.23
+Nashik,Mahatma Nagar,809,2,3,Villa,Unfurnished,0,10,43.86
+Hyderabad,HITEC City,1354,3,4,Independent House,Unfurnished,1,15,76.92
+Nashik,Panchavati,1083,3,3,Independent House,Unfurnished,1,8,52.63
+Pune,Wakad,2143,4,4,Apartment,Fully Furnished,1,1,125.2
+Chennai,Anna Nagar,1291,2,2,Apartment,Fully Furnished,0,12,87.06
+Nagpur,Ramdaspeth,934,1,1,Independent House,Unfurnished,1,5,50.35
+Bengaluru,Yelahanka,1484,3,4,Apartment,Semi-Furnished,1,2,187.68
+Nashik,Gangapur Road,1590,2,2,Villa,Semi-Furnished,1,15,108.69
+Mumbai,Borivali,407,1,2,Apartment,Fully Furnished,1,12,53.33
+Delhi NCR,Dwarka,1373,3,3,Apartment,Unfurnished,1,11,119.08
+Chennai,Adyar,763,1,1,Apartment,Unfurnished,1,6,45.72
+Bengaluru,Whitefield,1193,2,2,Apartment,Semi-Furnished,0,15,77.01
+Bengaluru,Yelahanka,1567,3,3,Apartment,Fully Furnished,1,4,109.41
+Mumbai,Powai,400,1,2,Apartment,Semi-Furnished,0,23,52.25
+Pune,Viman Nagar,1228,2,3,Apartment,Semi-Furnished,1,25,41.07
+Bengaluru,Electronic City,1274,3,4,Apartment,Semi-Furnished,1,19,75.74
+Delhi NCR,Noida Sector 62,950,1,1,Independent House,Fully Furnished,1,4,95.9
+Pune,Kothrud,1345,2,2,Apartment,Unfurnished,0,15,59.62
+Mumbai,Worli,834,2,3,Apartment,Semi-Furnished,1,25,62.72
+Chennai,T Nagar,1114,2,2,Apartment,Semi-Furnished,1,2,80.52
+Delhi NCR,Dwarka,1083,2,2,Apartment,Fully Furnished,0,12,136.68
+Hyderabad,Banjara Hills,1622,3,4,Apartment,Semi-Furnished,1,8,127.56
+Nagpur,Ramdaspeth,1295,2,3,Apartment,Fully Furnished,1,5,47.91
+Nagpur,Ramdaspeth,1409,3,4,Apartment,Fully Furnished,1,23,58.0
+Pune,Viman Nagar,1151,2,2,Apartment,Semi-Furnished,1,25,72.29
+Mumbai,Powai,939,2,2,Independent House,Semi-Furnished,1,2,234.91
+Pune,Baner,1557,3,4,Apartment,Fully Furnished,0,24,86.98
+Bengaluru,Yelahanka,1081,2,2,Independent House,Fully Furnished,1,6,138.08
+Hyderabad,Miyapur,976,2,2,Apartment,Unfurnished,1,2,74.54
+Nashik,Panchavati,1096,2,3,Apartment,Fully Furnished,0,23,34.78
+Nashik,Mahatma Nagar,1837,4,5,Villa,Semi-Furnished,1,19,55.38
+Hyderabad,Kondapur,2425,4,4,Apartment,Fully Furnished,0,17,181.01
+Pune,Hinjewadi,2133,4,5,Villa,Fully Furnished,1,24,163.28
+Hyderabad,Jubilee Hills,2445,5,6,Independent House,Unfurnished,1,3,198.62
+Hyderabad,Banjara Hills,1703,3,4,Villa,Fully Furnished,0,22,165.13
+Nashik,Indira Nagar,1152,2,3,Apartment,Unfurnished,1,10,35.21
+Nashik,Indira Nagar,2110,4,4,Apartment,Unfurnished,1,8,111.58
+Hyderabad,HITEC City,1304,2,2,Apartment,Unfurnished,0,2,81.52
+Mumbai,Bandra,1762,3,4,Apartment,Fully Furnished,1,15,199.74
+Bengaluru,Jayanagar,1996,4,5,Apartment,Fully Furnished,1,1,143.96
+Mumbai,Borivali,1118,2,2,Villa,Fully Furnished,1,10,259.18
+Mumbai,Bandra,1691,3,4,Apartment,Semi-Furnished,1,5,253.62
+Chennai,Adyar,794,2,2,Apartment,Semi-Furnished,1,11,53.37
+Delhi NCR,Dwarka,990,2,2,Apartment,Unfurnished,1,25,65.14
+Delhi NCR,Noida Sector 62,1065,1,1,Independent House,Unfurnished,1,15,114.75
+Bengaluru,Jayanagar,2027,3,4,Apartment,Fully Furnished,0,12,178.91
+Hyderabad,Jubilee Hills,1180,2,2,Apartment,Semi-Furnished,1,11,84.38
+Nashik,Gangapur Road,844,1,1,Independent House,Fully Furnished,1,18,29.06
+Bengaluru,Jayanagar,1323,2,3,Apartment,Fully Furnished,1,2,103.75
+Delhi NCR,Greater Noida,1700,2,2,Apartment,Semi-Furnished,1,20,101.74
+Pune,Wakad,1383,2,2,Apartment,Semi-Furnished,1,19,66.7
+Delhi NCR,Dwarka,2174,4,5,Apartment,Semi-Furnished,1,5,199.42
+Hyderabad,Banjara Hills,915,2,2,Apartment,Unfurnished,0,2,68.73
+Chennai,Adyar,496,1,2,Independent House,Unfurnished,0,8,37.67
+Delhi NCR,Dwarka,1266,2,3,Apartment,Unfurnished,1,0,108.93
+Mumbai,Borivali,1991,4,5,Apartment,Fully Furnished,1,17,127.54
+Bengaluru,Electronic City,1433,3,4,Apartment,Fully Furnished,1,11,138.4
+Chennai,Adyar,1096,2,2,Apartment,Semi-Furnished,1,4,84.56
+Bengaluru,HSR Layout,1034,2,2,Villa,Semi-Furnished,1,0,123.73
+Delhi NCR,Dwarka,2067,3,3,Apartment,Semi-Furnished,1,12,169.33
+Delhi NCR,Vasant Kunj,1392,2,2,Apartment,Fully Furnished,1,9,171.1
+Nashik,Panchavati,1091,2,2,Apartment,Unfurnished,1,19,27.9
+Chennai,Anna Nagar,1320,2,2,Villa,Unfurnished,1,3,146.47
+Nashik,Gangapur Road,569,1,2,Apartment,Unfurnished,0,15,21.79
+Chennai,OMR,996,2,2,Apartment,Unfurnished,0,8,84.95
+Delhi NCR,Gurgaon Sector 56,1402,2,2,Independent House,Semi-Furnished,1,0,197.64
+Hyderabad,Kondapur,1683,3,4,Apartment,Unfurnished,1,14,128.52
+Pune,Viman Nagar,957,2,3,Apartment,Fully Furnished,0,23,62.08
+Nashik,Panchavati,1595,3,3,Independent House,Fully Furnished,1,3,80.29
+Hyderabad,Banjara Hills,909,2,2,Independent House,Fully Furnished,0,12,73.32
+Mumbai,Navi Mumbai,1363,3,3,Independent House,Unfurnished,1,15,230.27
+Pune,Kharadi,2115,4,4,Apartment,Unfurnished,0,4,115.89
+Nagpur,Manewada,2024,3,3,Apartment,Unfurnished,1,1,84.99
+Chennai,T Nagar,1267,3,4,Apartment,Fully Furnished,1,10,93.93
+Bengaluru,Indiranagar,1263,2,3,Independent House,Fully Furnished,1,14,93.9
+Mumbai,Worli,1505,3,3,Independent House,Unfurnished,1,23,367.69
+Delhi NCR,Noida Sector 62,1184,2,3,Apartment,Semi-Furnished,1,13,117.72
+Nagpur,Dharampeth,453,1,1,Independent House,Unfurnished,1,1,22.94
+Pune,Baner,1527,3,4,Apartment,Fully Furnished,1,1,134.77
+Nagpur,Civil Lines,1465,3,3,Villa,Unfurnished,1,2,60.82
+Nagpur,Ramdaspeth,1471,3,4,Independent House,Unfurnished,1,16,60.32
+Mumbai,Andheri,1614,3,3,Villa,Unfurnished,0,23,300.18
+Hyderabad,Miyapur,1724,3,3,Apartment,Semi-Furnished,0,24,113.23
+Nagpur,Manewada,1455,3,4,Apartment,Unfurnished,1,16,46.67
+Chennai,OMR,1908,4,5,Apartment,Fully Furnished,1,23,130.69
+Nagpur,Ramdaspeth,1076,2,2,Independent House,Fully Furnished,1,11,59.0
+Delhi NCR,Gurgaon Sector 56,1609,3,4,Apartment,Semi-Furnished,0,9,129.17
+Hyderabad,HITEC City,2141,4,4,Villa,Fully Furnished,1,3,268.7
+Bengaluru,HSR Layout,923,2,2,Apartment,Semi-Furnished,0,18,66.95
+Delhi NCR,Greater Noida,2085,4,4,Independent House,Unfurnished,1,22,142.34
+Pune,Hinjewadi,740,1,2,Independent House,Semi-Furnished,1,13,34.93
+Delhi NCR,Gurgaon Sector 56,1571,4,4,Apartment,Fully Furnished,1,1,153.57
+Bengaluru,HSR Layout,1186,2,2,Apartment,Fully Furnished,1,14,97.6
+Pune,Viman Nagar,942,2,3,Apartment,Unfurnished,1,18,49.89
+Nashik,College Road,1180,2,3,Independent House,Semi-Furnished,1,15,40.41
+Delhi NCR,Greater Noida,971,2,2,Apartment,Semi-Furnished,1,21,75.6
+Delhi NCR,Vasant Kunj,803,2,2,Apartment,Fully Furnished,0,24,55.23
+Nashik,Indira Nagar,2098,5,6,Apartment,Unfurnished,1,21,55.78
+Pune,Wakad,1534,3,3,Independent House,Semi-Furnished,0,10,133.02
+Pune,Hinjewadi,1220,2,2,Apartment,Fully Furnished,1,6,60.84
+Chennai,Adyar,1278,3,3,Apartment,Fully Furnished,0,8,89.38
+Bengaluru,Indiranagar,1154,2,3,Apartment,Unfurnished,0,12,69.97
+Nagpur,Dharampeth,400,1,2,Villa,Fully Furnished,0,10,17.07
+Chennai,Adyar,1087,2,2,Apartment,Semi-Furnished,0,1,87.48
+Nagpur,Manewada,766,2,2,Apartment,Semi-Furnished,1,20,31.0
+Nashik,Indira Nagar,2250,5,6,Apartment,Semi-Furnished,0,17,93.93
+Nagpur,Manewada,1654,3,3,Apartment,Fully Furnished,1,13,61.91
+Hyderabad,Miyapur,995,2,3,Apartment,Unfurnished,1,20,65.08
+Hyderabad,HITEC City,1143,2,2,Villa,Unfurnished,1,10,119.93
+Pune,Wakad,1216,2,2,Independent House,Semi-Furnished,1,9,54.24
+Nashik,Indira Nagar,1401,3,3,Apartment,Fully Furnished,1,19,61.31
+Hyderabad,Miyapur,1350,2,2,Apartment,Semi-Furnished,1,16,94.82
+Nagpur,Civil Lines,1916,4,5,Apartment,Unfurnished,1,1,66.36
+Delhi NCR,Gurgaon Sector 56,2118,4,5,Apartment,Unfurnished,1,2,237.95
+Chennai,Adyar,1522,2,3,Independent House,Semi-Furnished,1,24,147.36
+Mumbai,Worli,1247,3,4,Apartment,Fully Furnished,0,16,247.65
+Mumbai,Juhu,860,2,3,Apartment,Fully Furnished,0,6,190.09
+Nashik,Panchavati,1261,2,3,Apartment,Semi-Furnished,1,19,56.38
+Bengaluru,Koramangala,1455,3,4,Apartment,Unfurnished,1,24,74.16
+Bengaluru,Koramangala,1086,2,3,Apartment,Fully Furnished,1,14,97.84
+Bengaluru,Yelahanka,1387,3,3,Apartment,Fully Furnished,1,2,139.31
+Delhi NCR,Greater Noida,1660,3,3,Apartment,Unfurnished,1,10,93.12
+Bengaluru,Whitefield,1894,4,4,Apartment,Semi-Furnished,1,9,130.78
+Bengaluru,Indiranagar,2134,4,4,Apartment,Semi-Furnished,0,14,117.9
+Mumbai,Navi Mumbai,1282,2,3,Apartment,Unfurnished,0,7,218.17
+Nashik,Mahatma Nagar,1542,3,3,Apartment,Unfurnished,1,1,70.47
+Nashik,Gangapur Road,1872,4,4,Apartment,Unfurnished,1,21,65.29
+Nashik,Mahatma Nagar,1585,3,3,Apartment,Semi-Furnished,0,2,73.72
+Delhi NCR,Gurgaon Sector 56,1512,3,3,Apartment,Unfurnished,1,10,97.91
+Delhi NCR,Greater Noida,1107,2,2,Apartment,Fully Furnished,0,15,87.23
+Nashik,Panchavati,1497,3,4,Apartment,Fully Furnished,1,4,53.68
+Chennai,Adyar,1759,3,4,Independent House,Fully Furnished,1,22,123.42
+Pune,Baner,1521,2,2,Independent House,Semi-Furnished,1,1,135.91
+Nagpur,Besha,1629,3,3,Apartment,Fully Furnished,1,8,70.64
+Nagpur,Dharampeth,658,1,2,Apartment,Fully Furnished,0,5,24.34
+Hyderabad,Jubilee Hills,1932,3,4,Independent House,Fully Furnished,1,15,167.01
+Nagpur,Manewada,1396,3,4,Independent House,Semi-Furnished,1,17,64.99
+Mumbai,Juhu,1223,3,4,Apartment,Unfurnished,1,0,197.89
+Bengaluru,Electronic City,1307,3,3,Independent House,Semi-Furnished,1,22,114.81
+Mumbai,Thane,746,2,3,Apartment,Semi-Furnished,1,16,111.53
+Mumbai,Juhu,2088,4,5,Apartment,Semi-Furnished,1,6,414.69
+Nagpur,Manewada,1620,3,4,Apartment,Unfurnished,1,6,61.15
+Pune,Baner,1379,2,2,Apartment,Unfurnished,0,16,61.13
+Nashik,College Road,1622,3,4,Apartment,Unfurnished,1,8,46.2
+Pune,Hinjewadi,564,1,2,Apartment,Fully Furnished,0,6,36.75
+Nagpur,Ramdaspeth,1310,2,2,Apartment,Unfurnished,0,9,43.04
+Chennai,Velachery,400,1,2,Apartment,Unfurnished,0,13,23.12
+Delhi NCR,Noida Sector 62,1679,3,4,Apartment,Unfurnished,0,24,112.92
+Pune,Bavdhan,942,1,2,Apartment,Unfurnished,1,19,38.19
+Nashik,Gangapur Road,870,2,3,Apartment,Unfurnished,0,15,37.05
+Bengaluru,HSR Layout,1938,3,3,Apartment,Fully Furnished,0,10,184.56
+Pune,Hinjewadi,1278,2,3,Apartment,Unfurnished,1,15,62.71
+Delhi NCR,Vasant Kunj,1644,3,4,Apartment,Unfurnished,0,23,124.72
+Chennai,Velachery,1742,3,4,Apartment,Semi-Furnished,1,9,135.5
+Pune,Aundh,1500,2,2,Apartment,Unfurnished,0,24,71.29
+Bengaluru,Yelahanka,785,1,2,Apartment,Semi-Furnished,1,6,59.43
+Nashik,Panchavati,1544,3,4,Apartment,Fully Furnished,1,4,62.5
+Nashik,College Road,908,2,2,Apartment,Semi-Furnished,0,9,41.18
+Delhi NCR,Dwarka,1475,3,4,Apartment,Unfurnished,1,15,97.37
+Bengaluru,Whitefield,1829,3,4,Apartment,Fully Furnished,1,4,212.52
+Bengaluru,Yelahanka,1797,4,5,Apartment,Fully Furnished,1,14,142.91
+Delhi NCR,Greater Noida,1296,2,3,Independent House,Semi-Furnished,1,7,146.57
+Chennai,Anna Nagar,1564,3,4,Villa,Fully Furnished,1,1,224.98
+Mumbai,Navi Mumbai,1842,3,3,Apartment,Fully Furnished,0,4,343.68
+Nashik,Panchavati,1191,2,2,Apartment,Fully Furnished,0,21,34.59
+Nashik,Mahatma Nagar,1030,1,2,Independent House,Semi-Furnished,1,16,53.43
+Nagpur,Manewada,1045,2,3,Apartment,Fully Furnished,1,23,30.42
+Nashik,College Road,1689,3,3,Apartment,Semi-Furnished,0,9,64.01
+Pune,Hinjewadi,944,2,3,Independent House,Unfurnished,0,19,57.49
+Bengaluru,Electronic City,1550,3,4,Independent House,Semi-Furnished,1,15,143.32
+Mumbai,Borivali,2503,5,5,Independent House,Semi-Furnished,1,7,644.32
+Chennai,Anna Nagar,1178,2,3,Apartment,Unfurnished,0,5,66.73
+Chennai,Adyar,1057,2,3,Apartment,Fully Furnished,1,0,95.43
+Nashik,Panchavati,1444,2,3,Apartment,Unfurnished,0,17,36.78
+Delhi NCR,Greater Noida,2342,4,5,Apartment,Unfurnished,1,20,92.69
+Delhi NCR,Vasant Kunj,1631,3,3,Apartment,Fully Furnished,1,10,97.89
+Pune,Baner,1603,2,2,Apartment,Fully Furnished,1,8,99.97
+Hyderabad,Gachibowli,424,1,1,Villa,Fully Furnished,1,19,28.57
+Pune,Wakad,1843,4,4,Apartment,Fully Furnished,1,3,104.82
+Bengaluru,HSR Layout,876,2,2,Villa,Semi-Furnished,1,22,99.88
+Nagpur,Besha,1440,2,2,Independent House,Semi-Furnished,1,10,52.54
+Mumbai,Thane,2571,5,6,Apartment,Semi-Furnished,1,19,277.41
+Pune,Kothrud,1099,2,3,Apartment,Unfurnished,1,22,63.73
+Nashik,College Road,897,1,1,Apartment,Semi-Furnished,0,15,39.62
+Mumbai,Worli,974,2,3,Apartment,Fully Furnished,1,15,208.03
+Delhi NCR,Vasant Kunj,2215,3,3,Apartment,Semi-Furnished,1,3,104.84
+Nagpur,Besha,1503,3,4,Apartment,Fully Furnished,0,11,49.95
+Nagpur,Dharampeth,1574,3,4,Apartment,Unfurnished,1,21,54.38
+Pune,Kharadi,1242,2,3,Apartment,Unfurnished,0,23,76.66
+Hyderabad,Kondapur,1351,2,3,Apartment,Semi-Furnished,0,1,92.67
+Mumbai,Worli,868,1,2,Apartment,Fully Furnished,1,2,204.63
+Mumbai,Powai,1082,2,2,Villa,Fully Furnished,0,7,261.73
+Bengaluru,Yelahanka,693,1,2,Apartment,Unfurnished,0,3,50.72
+Pune,Bavdhan,1858,3,3,Independent House,Semi-Furnished,1,25,121.47
+Delhi NCR,Dwarka,983,1,1,Independent House,Unfurnished,0,18,55.41
+Bengaluru,HSR Layout,940,1,2,Independent House,Unfurnished,1,17,79.03
+Mumbai,Powai,527,1,2,Apartment,Semi-Furnished,0,0,117.26
+Mumbai,Powai,1915,4,5,Apartment,Semi-Furnished,1,6,383.07
+Chennai,T Nagar,993,2,2,Apartment,Fully Furnished,1,19,74.17
+Pune,Hinjewadi,1296,2,2,Apartment,Unfurnished,0,19,54.9
+Hyderabad,Kondapur,1809,3,3,Apartment,Unfurnished,1,21,126.33
+Chennai,T Nagar,688,2,2,Apartment,Semi-Furnished,1,13,46.99
+Chennai,Velachery,1130,1,1,Apartment,Unfurnished,1,16,91.45
+Pune,Wakad,2164,4,5,Apartment,Unfurnished,1,7,138.62
+Pune,Viman Nagar,1556,3,3,Independent House,Unfurnished,1,18,80.69
+Chennai,Velachery,1807,4,4,Villa,Semi-Furnished,1,12,142.47
+Hyderabad,Banjara Hills,772,2,3,Apartment,Unfurnished,0,8,59.91
+Bengaluru,Indiranagar,2278,4,5,Apartment,Semi-Furnished,1,9,126.21
+Bengaluru,Electronic City,2408,5,5,Apartment,Fully Furnished,1,6,161.59
+Chennai,T Nagar,868,2,3,Apartment,Semi-Furnished,1,18,78.86
+Mumbai,Worli,2330,5,5,Apartment,Fully Furnished,0,13,328.79
+Delhi NCR,Vasant Kunj,1613,3,3,Apartment,Unfurnished,0,22,102.25
+Bengaluru,HSR Layout,1341,2,2,Apartment,Semi-Furnished,1,22,42.33
+Chennai,Adyar,1630,3,3,Apartment,Unfurnished,1,5,125.36
+Chennai,Velachery,1796,4,4,Independent House,Semi-Furnished,0,9,120.88
+Delhi NCR,Dwarka,1441,3,3,Apartment,Semi-Furnished,0,16,147.28
+Mumbai,Andheri,965,2,3,Apartment,Unfurnished,0,17,124.66
+Hyderabad,HITEC City,2086,5,5,Apartment,Semi-Furnished,1,24,113.78
+Nagpur,Besha,1130,2,3,Apartment,Semi-Furnished,1,14,35.83
+Chennai,Adyar,1193,2,2,Apartment,Fully Furnished,1,14,62.45
+Pune,Viman Nagar,2083,4,5,Apartment,Unfurnished,1,2,108.1
+Pune,Kothrud,1623,2,2,Apartment,Unfurnished,0,9,75.67
+Bengaluru,Koramangala,1235,2,3,Apartment,Unfurnished,0,25,85.28
+Hyderabad,Miyapur,1692,3,4,Apartment,Fully Furnished,1,15,83.48
+Chennai,T Nagar,934,2,2,Apartment,Semi-Furnished,1,15,51.23
+Nagpur,Besha,2039,3,3,Apartment,Semi-Furnished,1,19,85.97
+Nashik,Indira Nagar,2443,5,5,Apartment,Unfurnished,1,18,75.1
+Bengaluru,Koramangala,1107,2,2,Apartment,Unfurnished,1,11,92.96
+Bengaluru,Electronic City,1202,2,2,Villa,Unfurnished,1,10,143.85
+Bengaluru,Indiranagar,2540,5,6,Apartment,Semi-Furnished,1,25,90.66
+Chennai,OMR,1441,3,4,Apartment,Fully Furnished,0,9,90.64
+Mumbai,Worli,1563,3,3,Apartment,Semi-Furnished,0,19,185.0
+Hyderabad,Jubilee Hills,1165,2,2,Independent House,Fully Furnished,0,16,69.78
+Delhi NCR,Noida Sector 62,1177,2,2,Apartment,Fully Furnished,1,11,100.6
+Nagpur,Besha,1178,2,3,Apartment,Fully Furnished,1,23,40.13
+Delhi NCR,Vasant Kunj,1069,2,3,Apartment,Fully Furnished,0,4,109.98
+Nagpur,Dharampeth,1966,4,5,Apartment,Fully Furnished,1,13,91.65
+Bengaluru,Electronic City,1051,2,2,Apartment,Semi-Furnished,1,17,44.87
+Nashik,Mahatma Nagar,1414,2,3,Apartment,Unfurnished,1,8,58.65
+Nashik,Panchavati,400,1,2,Apartment,Fully Furnished,1,0,21.88
+Pune,Kharadi,1800,3,4,Apartment,Semi-Furnished,0,11,121.2
+Mumbai,Thane,1323,2,2,Apartment,Fully Furnished,1,11,257.2
+Delhi NCR,Dwarka,406,1,2,Apartment,Unfurnished,1,24,30.74
+Bengaluru,Jayanagar,759,1,1,Apartment,Semi-Furnished,1,8,52.92
+Pune,Kharadi,1445,3,3,Apartment,Semi-Furnished,1,13,64.89
+Nagpur,Civil Lines,525,1,1,Apartment,Unfurnished,0,13,17.33
+Bengaluru,Indiranagar,1029,2,3,Apartment,Semi-Furnished,1,5,87.28
+Nashik,College Road,1340,3,3,Apartment,Fully Furnished,1,22,49.48
+Bengaluru,Indiranagar,1389,2,2,Apartment,Semi-Furnished,1,1,134.47
+Hyderabad,Gachibowli,977,1,1,Apartment,Semi-Furnished,0,2,72.7
+Pune,Wakad,2454,4,4,Villa,Unfurnished,1,0,230.69
+Pune,Kothrud,1890,3,4,Apartment,Unfurnished,1,16,96.27
+Mumbai,Juhu,1311,3,4,Villa,Fully Furnished,0,23,248.38
+Pune,Viman Nagar,1982,4,5,Apartment,Unfurnished,1,21,111.66
+Nagpur,Manewada,1305,2,2,Apartment,Semi-Furnished,0,14,46.02
+Pune,Kothrud,902,2,3,Apartment,Unfurnished,0,10,44.59
+Chennai,Adyar,1707,3,4,Apartment,Semi-Furnished,1,6,129.53
+Pune,Bavdhan,1942,4,5,Apartment,Fully Furnished,1,21,124.91
+Pune,Wakad,527,1,2,Apartment,Unfurnished,0,11,34.72
+Hyderabad,Jubilee Hills,1204,2,3,Apartment,Semi-Furnished,1,8,86.45
+Nashik,Panchavati,1336,2,3,Apartment,Unfurnished,1,3,40.47
+Pune,Hinjewadi,995,2,2,Apartment,Fully Furnished,0,2,69.65
+Bengaluru,Koramangala,1759,3,4,Apartment,Fully Furnished,0,24,117.17
+Pune,Bavdhan,1383,3,3,Apartment,Semi-Furnished,1,17,62.75
+Mumbai,Bandra,2669,5,5,Apartment,Semi-Furnished,1,14,598.59
+Mumbai,Bandra,1202,2,3,Apartment,Unfurnished,1,22,111.79
+Chennai,Adyar,1631,3,4,Apartment,Unfurnished,0,12,133.26
+Nashik,Panchavati,1695,3,4,Independent House,Semi-Furnished,1,1,94.92
+Nagpur,Besha,1373,3,3,Apartment,Semi-Furnished,1,11,52.55
+Delhi NCR,Dwarka,860,1,1,Apartment,Semi-Furnished,0,22,71.37
+Nagpur,Civil Lines,532,1,2,Apartment,Semi-Furnished,1,8,22.29
+Mumbai,Navi Mumbai,1538,3,4,Apartment,Semi-Furnished,0,25,130.14
+Hyderabad,Jubilee Hills,1294,2,3,Apartment,Semi-Furnished,1,6,94.51
+Chennai,Velachery,1456,3,3,Apartment,Semi-Furnished,1,25,86.9
+Pune,Wakad,1202,3,4,Apartment,Fully Furnished,1,13,97.7
+Hyderabad,Jubilee Hills,1396,3,4,Independent House,Semi-Furnished,1,6,99.48
+Chennai,Adyar,1385,2,2,Independent House,Fully Furnished,1,6,136.97
+Chennai,OMR,1932,4,5,Apartment,Unfurnished,1,11,111.46
+Nashik,Panchavati,1454,2,2,Independent House,Semi-Furnished,1,20,61.3
+Bengaluru,HSR Layout,1240,3,3,Apartment,Unfurnished,1,0,106.56
+Chennai,T Nagar,2005,3,4,Apartment,Unfurnished,1,5,203.49
+Nashik,Indira Nagar,873,1,2,Apartment,Unfurnished,1,25,37.11
+Pune,Kharadi,1638,3,3,Independent House,Fully Furnished,0,12,125.87
+Bengaluru,Whitefield,708,1,1,Apartment,Fully Furnished,1,15,60.63
+Pune,Kharadi,1199,2,3,Villa,Unfurnished,1,3,96.95
+Bengaluru,Whitefield,2551,5,6,Apartment,Fully Furnished,0,15,132.76
+Pune,Kharadi,1346,2,3,Villa,Unfurnished,1,15,95.53
+Nagpur,Besha,599,1,1,Apartment,Fully Furnished,1,8,21.38
+Nagpur,Dharampeth,1256,2,2,Apartment,Semi-Furnished,1,9,46.49
+Pune,Viman Nagar,1151,2,2,Apartment,Fully Furnished,1,25,81.13
+Chennai,T Nagar,1654,3,4,Independent House,Unfurnished,1,22,118.69
+Nashik,Mahatma Nagar,891,1,2,Apartment,Semi-Furnished,0,24,36.85
+Chennai,Anna Nagar,400,1,1,Apartment,Unfurnished,0,5,32.1
+Hyderabad,Miyapur,1390,3,3,Independent House,Semi-Furnished,1,15,108.54
+Bengaluru,Yelahanka,1742,3,4,Apartment,Semi-Furnished,1,5,133.04
+Delhi NCR,Vasant Kunj,1944,4,4,Villa,Fully Furnished,1,2,298.03
+Bengaluru,Indiranagar,1096,2,3,Apartment,Semi-Furnished,1,18,74.23
+Pune,Baner,1685,3,4,Independent House,Semi-Furnished,0,7,122.26
+Nashik,Gangapur Road,1585,3,4,Apartment,Unfurnished,1,9,56.46
+Hyderabad,Kondapur,906,2,2,Apartment,Semi-Furnished,1,19,45.97
+Chennai,Velachery,559,1,1,Villa,Semi-Furnished,1,22,47.17
+Delhi NCR,Vasant Kunj,1526,3,4,Apartment,Unfurnished,0,10,152.43
+Nagpur,Ramdaspeth,1706,4,4,Apartment,Fully Furnished,1,9,64.36
+Delhi NCR,Dwarka,928,1,1,Apartment,Unfurnished,1,10,81.7
+Nagpur,Ramdaspeth,718,2,3,Apartment,Unfurnished,1,8,25.46
+Nagpur,Manewada,1340,2,3,Apartment,Semi-Furnished,1,10,50.63
+Bengaluru,Electronic City,2021,4,5,Apartment,Unfurnished,1,5,121.86
+Mumbai,Navi Mumbai,1274,2,3,Apartment,Semi-Furnished,0,14,155.58
+Chennai,T Nagar,1259,2,2,Apartment,Unfurnished,1,5,115.64
+Bengaluru,Yelahanka,1621,2,3,Independent House,Fully Furnished,1,18,139.28
+Bengaluru,Koramangala,2357,4,4,Apartment,Semi-Furnished,0,9,185.81
+Pune,Aundh,796,2,2,Apartment,Unfurnished,1,22,35.67
+Nashik,Mahatma Nagar,1216,3,4,Apartment,Semi-Furnished,1,23,34.41
+Bengaluru,Whitefield,1940,4,5,Independent House,Fully Furnished,0,17,198.94
+Delhi NCR,Dwarka,1050,2,3,Apartment,Unfurnished,1,12,77.18
+Delhi NCR,Dwarka,1614,3,3,Apartment,Semi-Furnished,1,21,95.72
+Pune,Kharadi,1082,2,3,Independent House,Semi-Furnished,1,18,62.04
+Delhi NCR,Gurgaon Sector 56,1582,3,4,Apartment,Semi-Furnished,0,1,57.99
+Hyderabad,Banjara Hills,1551,3,3,Apartment,Fully Furnished,0,9,107.47
+Chennai,T Nagar,580,1,2,Apartment,Unfurnished,1,7,34.4
+Mumbai,Andheri,1879,4,4,Apartment,Unfurnished,1,21,252.36
+Nashik,Gangapur Road,1072,2,2,Apartment,Fully Furnished,1,5,53.73
+Mumbai,Andheri,889,2,3,Apartment,Semi-Furnished,1,19,71.84
+Nashik,Gangapur Road,2262,5,5,Apartment,Fully Furnished,1,21,98.2
+Mumbai,Worli,1004,1,1,Apartment,Semi-Furnished,1,9,204.41
+Nagpur,Manewada,1324,3,3,Apartment,Unfurnished,0,0,53.47
+Mumbai,Juhu,1649,2,2,Apartment,Fully Furnished,1,2,279.0
+Nashik,Panchavati,659,1,2,Apartment,Unfurnished,1,15,15.88
+Hyderabad,HITEC City,1062,2,3,Apartment,Unfurnished,1,13,71.08
+Chennai,Adyar,1296,3,4,Apartment,Semi-Furnished,1,7,90.91
+Delhi NCR,Greater Noida,1277,2,2,Independent House,Semi-Furnished,1,3,98.5
+Chennai,Adyar,2013,4,5,Apartment,Unfurnished,1,9,135.24
+Chennai,Anna Nagar,1263,2,3,Apartment,Semi-Furnished,1,13,66.73
+Nagpur,Manewada,2068,3,3,Apartment,Fully Furnished,0,21,63.64
+Bengaluru,Electronic City,1232,2,3,Apartment,Unfurnished,0,0,106.19
+Nagpur,Besha,1318,2,2,Independent House,Fully Furnished,0,25,57.57
+Hyderabad,Gachibowli,1441,3,4,Villa,Semi-Furnished,0,24,115.53
+Nashik,Indira Nagar,1918,4,4,Villa,Semi-Furnished,1,24,91.84
+Pune,Baner,1414,2,2,Independent House,Semi-Furnished,1,23,87.72
+Nashik,Panchavati,1374,3,4,Apartment,Semi-Furnished,1,4,66.45
+Delhi NCR,Gurgaon Sector 56,1536,2,3,Apartment,Unfurnished,0,8,141.42
+Nagpur,Manewada,1218,2,2,Independent House,Fully Furnished,1,25,47.29
+Delhi NCR,Vasant Kunj,1802,4,5,Apartment,Unfurnished,0,2,227.63
+Nagpur,Besha,1348,2,2,Apartment,Unfurnished,1,18,54.86
+Nashik,Panchavati,1354,2,3,Villa,Unfurnished,1,16,72.4
+Bengaluru,Yelahanka,1402,2,2,Apartment,Fully Furnished,1,22,75.44
+Delhi NCR,Noida Sector 62,1603,4,4,Apartment,Semi-Furnished,1,16,166.64
+Nashik,Indira Nagar,670,1,2,Apartment,Fully Furnished,1,0,43.53
+Nashik,Indira Nagar,1616,3,4,Villa,Unfurnished,0,11,89.93
+Nashik,Mahatma Nagar,1048,2,2,Apartment,Fully Furnished,0,14,40.17
+Hyderabad,Jubilee Hills,1317,2,2,Apartment,Unfurnished,0,10,96.58
+Hyderabad,Jubilee Hills,1252,2,2,Independent House,Unfurnished,0,1,95.23
+Hyderabad,Kondapur,568,1,2,Apartment,Semi-Furnished,1,18,35.94
+Chennai,T Nagar,2639,5,6,Independent House,Unfurnished,1,15,189.04
+Pune,Viman Nagar,1202,2,2,Villa,Semi-Furnished,0,19,80.61
+Delhi NCR,Gurgaon Sector 56,681,1,2,Apartment,Unfurnished,1,9,66.71
+Chennai,Velachery,1881,3,3,Apartment,Semi-Furnished,1,6,140.21
+Bengaluru,Jayanagar,1678,3,3,Apartment,Unfurnished,0,13,98.59
+Chennai,OMR,1608,3,4,Independent House,Fully Furnished,1,24,115.32
+Chennai,T Nagar,580,1,2,Independent House,Fully Furnished,1,12,50.07
+Mumbai,Navi Mumbai,1201,3,3,Apartment,Fully Furnished,1,17,241.74
+Pune,Wakad,1376,2,2,Apartment,Semi-Furnished,0,3,82.69
+Mumbai,Thane,1787,3,3,Apartment,Fully Furnished,1,12,233.07
+Mumbai,Navi Mumbai,2128,4,4,Apartment,Semi-Furnished,0,16,305.32
+Pune,Wakad,817,2,3,Apartment,Unfurnished,1,9,55.7
+Delhi NCR,Noida Sector 62,425,1,2,Apartment,Unfurnished,1,12,36.92
+Nagpur,Besha,1236,2,2,Apartment,Fully Furnished,1,15,49.52
+Delhi NCR,Gurgaon Sector 56,1229,2,3,Apartment,Unfurnished,1,0,97.33
+Mumbai,Thane,1712,3,3,Independent House,Fully Furnished,1,9,392.21
+Delhi NCR,Vasant Kunj,627,1,1,Apartment,Unfurnished,1,17,71.47
+Chennai,Velachery,703,1,2,Apartment,Unfurnished,0,1,45.86
+Chennai,OMR,1816,3,4,Independent House,Unfurnished,1,1,182.5
+Pune,Hinjewadi,517,1,1,Apartment,Semi-Furnished,1,6,40.21
+Nagpur,Besha,1608,3,4,Apartment,Semi-Furnished,1,6,49.93
+Mumbai,Powai,1600,3,3,Apartment,Unfurnished,1,13,270.37
+Chennai,T Nagar,1188,2,2,Apartment,Fully Furnished,1,21,106.12
+Delhi NCR,Greater Noida,942,2,2,Apartment,Semi-Furnished,1,14,107.04
+Mumbai,Juhu,1677,3,4,Apartment,Fully Furnished,1,25,230.36
+Chennai,OMR,561,1,2,Apartment,Fully Furnished,1,3,39.59
+Nashik,Mahatma Nagar,1533,2,2,Apartment,Fully Furnished,1,2,55.52
+Bengaluru,HSR Layout,1988,4,4,Apartment,Semi-Furnished,1,21,107.21
+Mumbai,Thane,1413,3,4,Villa,Fully Furnished,0,10,94.55
+Nashik,College Road,1615,3,4,Apartment,Unfurnished,1,1,88.93
+Nashik,Panchavati,1291,2,3,Apartment,Semi-Furnished,0,18,56.45
+Hyderabad,Banjara Hills,1166,2,2,Apartment,Semi-Furnished,1,2,37.06
+Pune,Baner,1377,2,2,Independent House,Unfurnished,0,15,89.34
+Mumbai,Borivali,739,2,2,Independent House,Fully Furnished,1,24,150.41
+Pune,Bavdhan,1534,3,3,Villa,Semi-Furnished,1,22,116.91
+Chennai,Velachery,1210,2,3,Apartment,Unfurnished,0,9,87.77
+Delhi NCR,Vasant Kunj,685,1,2,Independent House,Fully Furnished,0,14,46.23
+Pune,Kharadi,1895,3,3,Apartment,Fully Furnished,1,3,165.26
+Pune,Baner,1445,3,3,Villa,Unfurnished,1,11,86.45
+Chennai,Anna Nagar,1311,2,2,Apartment,Fully Furnished,1,16,105.14
+Nagpur,Besha,1984,3,3,Apartment,Fully Furnished,1,9,80.5
+Bengaluru,Indiranagar,1143,2,2,Apartment,Unfurnished,1,25,69.36
+Pune,Kharadi,1149,2,3,Apartment,Semi-Furnished,1,19,59.7
+Pune,Bavdhan,2443,4,4,Apartment,Unfurnished,1,22,140.6
+Hyderabad,Kondapur,2011,3,3,Apartment,Semi-Furnished,1,6,99.51
+Mumbai,Borivali,460,1,2,Apartment,Unfurnished,1,14,89.69
+Hyderabad,Banjara Hills,1387,3,4,Villa,Unfurnished,1,9,147.52
+Bengaluru,HSR Layout,1484,3,3,Apartment,Unfurnished,1,3,169.22
+Mumbai,Powai,904,2,2,Villa,Semi-Furnished,1,7,180.6
+Bengaluru,Electronic City,2199,5,6,Apartment,Unfurnished,1,6,199.36
+Delhi NCR,Dwarka,924,2,3,Villa,Fully Furnished,1,17,96.92
+Hyderabad,Gachibowli,1360,3,4,Independent House,Fully Furnished,1,6,131.21
+Pune,Bavdhan,1528,3,3,Apartment,Fully Furnished,1,15,83.41
+Nagpur,Ramdaspeth,1738,3,4,Apartment,Semi-Furnished,0,6,69.51
+Hyderabad,HITEC City,1512,2,2,Apartment,Semi-Furnished,1,18,110.8
+Nashik,Mahatma Nagar,501,1,1,Apartment,Semi-Furnished,1,18,23.63
+Mumbai,Navi Mumbai,1414,2,3,Apartment,Semi-Furnished,1,11,252.99
+Delhi NCR,Gurgaon Sector 56,1092,2,2,Apartment,Semi-Furnished,0,9,75.7
+Pune,Hinjewadi,1950,4,4,Apartment,Unfurnished,1,10,122.74
+Nashik,Gangapur Road,1412,2,2,Villa,Unfurnished,1,9,87.99
+Nagpur,Manewada,1916,4,4,Apartment,Unfurnished,1,7,76.87
+Chennai,Anna Nagar,1312,2,3,Apartment,Unfurnished,1,6,127.02
+Delhi NCR,Vasant Kunj,1318,2,3,Apartment,Unfurnished,1,9,111.39
+Nagpur,Besha,1304,2,3,Independent House,Fully Furnished,1,10,60.44
+Mumbai,Bandra,2126,4,4,Apartment,Fully Furnished,1,12,395.79
+Delhi NCR,Noida Sector 62,1782,2,3,Villa,Fully Furnished,1,2,289.38
+Bengaluru,Indiranagar,1338,3,3,Independent House,Fully Furnished,1,0,148.35
+Delhi NCR,Dwarka,1161,2,3,Apartment,Unfurnished,1,16,93.2
+Mumbai,Powai,1075,2,3,Apartment,Unfurnished,1,17,102.98
+Delhi NCR,Noida Sector 62,596,1,1,Apartment,Fully Furnished,1,5,67.16
+Nashik,Mahatma Nagar,1013,2,3,Apartment,Unfurnished,1,2,49.36
+Hyderabad,Miyapur,1472,2,3,Apartment,Unfurnished,0,9,73.22
+Chennai,OMR,1934,3,4,Apartment,Unfurnished,1,7,155.01
+Delhi NCR,Vasant Kunj,1176,2,2,Apartment,Fully Furnished,0,7,140.2
+Bengaluru,HSR Layout,1767,4,5,Apartment,Fully Furnished,1,15,94.23
+Pune,Kharadi,902,1,1,Independent House,Semi-Furnished,1,14,70.69
+Bengaluru,HSR Layout,1125,2,2,Apartment,Fully Furnished,1,12,79.35
+Hyderabad,Kondapur,734,1,2,Apartment,Unfurnished,1,21,47.54
+Chennai,T Nagar,1320,2,2,Apartment,Fully Furnished,1,4,90.23
+Bengaluru,Whitefield,1236,3,3,Apartment,Fully Furnished,1,5,112.03
+Pune,Baner,1984,3,3,Apartment,Unfurnished,0,21,82.07
+Mumbai,Andheri,1586,2,3,Apartment,Unfurnished,0,24,197.84
+Delhi NCR,Noida Sector 62,1899,4,5,Apartment,Unfurnished,1,0,210.79
+Hyderabad,Banjara Hills,1421,3,3,Independent House,Fully Furnished,1,23,95.12
+Bengaluru,Indiranagar,1224,2,2,Apartment,Fully Furnished,1,19,94.57
+Delhi NCR,Gurgaon Sector 56,1248,2,2,Apartment,Unfurnished,1,20,111.24
+Nagpur,Dharampeth,1243,2,3,Apartment,Semi-Furnished,1,1,59.78
+Nashik,Mahatma Nagar,1676,2,2,Independent House,Fully Furnished,1,8,90.67
+Pune,Kharadi,2382,5,6,Apartment,Fully Furnished,1,21,112.16
+Chennai,T Nagar,1097,2,2,Apartment,Unfurnished,1,0,87.34
+Pune,Hinjewadi,848,2,3,Apartment,Unfurnished,1,11,44.12
+Delhi NCR,Noida Sector 62,1530,3,3,Apartment,Semi-Furnished,1,8,132.5
+Nagpur,Dharampeth,1140,2,3,Independent House,Unfurnished,1,10,48.98
+Hyderabad,Banjara Hills,2003,3,3,Apartment,Unfurnished,1,20,141.04
+Mumbai,Andheri,1894,4,4,Apartment,Unfurnished,1,4,424.73
+Hyderabad,HITEC City,1283,2,3,Apartment,Fully Furnished,1,7,109.83
+Delhi NCR,Noida Sector 62,1592,3,4,Apartment,Fully Furnished,1,8,170.36
+Nagpur,Manewada,1462,2,3,Apartment,Fully Furnished,1,24,40.61
+Bengaluru,Jayanagar,2865,5,6,Independent House,Semi-Furnished,0,24,238.25
+Bengaluru,Electronic City,1537,3,4,Apartment,Semi-Furnished,1,12,104.77
+Chennai,Velachery,1002,2,3,Apartment,Unfurnished,0,0,94.91
+Nagpur,Manewada,1410,2,3,Villa,Semi-Furnished,1,15,53.12
+Nashik,Mahatma Nagar,749,1,1,Apartment,Fully Furnished,1,6,35.65
+Nagpur,Ramdaspeth,1848,3,4,Apartment,Semi-Furnished,1,7,40.92
+Chennai,Velachery,2030,4,5,Apartment,Fully Furnished,1,8,96.26
+Bengaluru,HSR Layout,934,2,2,Apartment,Unfurnished,1,12,46.69
+Pune,Viman Nagar,2236,4,4,Apartment,Semi-Furnished,1,18,115.95
+Pune,Wakad,1744,3,4,Apartment,Unfurnished,1,22,102.11
+Nashik,College Road,2514,5,6,Apartment,Fully Furnished,1,16,87.77
+Delhi NCR,Noida Sector 62,1169,2,2,Apartment,Unfurnished,0,14,97.89
+Hyderabad,HITEC City,1311,2,2,Apartment,Semi-Furnished,1,20,83.06
+Bengaluru,Indiranagar,1296,2,3,Apartment,Semi-Furnished,0,18,85.06
+Hyderabad,Kondapur,1280,2,2,Apartment,Unfurnished,0,3,99.25
+Delhi NCR,Greater Noida,1377,2,3,Apartment,Semi-Furnished,1,10,161.43
+Nagpur,Besha,2500,5,5,Apartment,Semi-Furnished,0,11,116.21
+Mumbai,Navi Mumbai,2000,4,5,Apartment,Unfurnished,1,22,186.44
+Hyderabad,Jubilee Hills,1504,2,3,Apartment,Unfurnished,0,20,114.85
+Mumbai,Borivali,1963,4,5,Apartment,Semi-Furnished,1,23,241.36
+Pune,Kharadi,1124,2,3,Apartment,Semi-Furnished,1,22,66.29
+Mumbai,Powai,1075,2,2,Independent House,Fully Furnished,1,5,291.06
+Chennai,Velachery,1129,2,2,Apartment,Fully Furnished,0,3,65.5
+Bengaluru,HSR Layout,2267,4,5,Apartment,Fully Furnished,1,21,179.73
+Pune,Kothrud,1984,4,5,Independent House,Semi-Furnished,1,18,129.6
+Nagpur,Manewada,2196,4,5,Villa,Semi-Furnished,1,7,90.07
+Nashik,College Road,773,2,2,Apartment,Fully Furnished,1,23,33.7
+Bengaluru,Jayanagar,1444,2,3,Apartment,Semi-Furnished,0,18,90.23
+Hyderabad,Kondapur,2665,5,6,Independent House,Unfurnished,1,3,175.03
+Chennai,OMR,1094,1,2,Apartment,Semi-Furnished,1,19,79.19
+Nashik,Indira Nagar,1551,3,3,Apartment,Fully Furnished,0,8,88.72
+Chennai,Anna Nagar,1073,2,3,Villa,Semi-Furnished,1,22,85.93
+Hyderabad,Banjara Hills,1975,4,4,Villa,Unfurnished,1,23,77.89
+Bengaluru,Indiranagar,1531,2,3,Apartment,Semi-Furnished,1,12,160.34
+Pune,Hinjewadi,1260,2,2,Apartment,Unfurnished,1,24,66.54
+Mumbai,Thane,1350,2,2,Apartment,Fully Furnished,1,9,129.57
+Bengaluru,Whitefield,1125,2,2,Apartment,Fully Furnished,0,21,85.97
+Delhi NCR,Vasant Kunj,1515,3,3,Apartment,Semi-Furnished,1,1,80.18
+Pune,Kharadi,1566,3,3,Apartment,Unfurnished,1,12,66.67
+Bengaluru,Yelahanka,1725,3,3,Independent House,Fully Furnished,1,8,171.54
+Chennai,OMR,806,1,1,Apartment,Fully Furnished,1,0,33.31
+Chennai,OMR,1336,3,3,Apartment,Fully Furnished,1,9,70.07
+Bengaluru,Indiranagar,1233,2,2,Independent House,Unfurnished,1,17,110.56
+Chennai,Velachery,965,2,2,Villa,Unfurnished,1,19,52.79
+Bengaluru,Indiranagar,1751,3,4,Apartment,Fully Furnished,1,20,142.36
+Mumbai,Andheri,2231,5,6,Villa,Unfurnished,1,21,527.37
+Mumbai,Juhu,1161,2,3,Apartment,Fully Furnished,1,22,138.07
+Nagpur,Ramdaspeth,1125,2,2,Apartment,Unfurnished,1,1,63.6
+Hyderabad,HITEC City,1381,2,2,Apartment,Unfurnished,1,8,110.45
+Pune,Hinjewadi,1190,2,2,Apartment,Semi-Furnished,1,22,72.96
+Bengaluru,Electronic City,986,2,3,Apartment,Fully Furnished,1,13,84.06
+Delhi NCR,Vasant Kunj,965,1,1,Apartment,Fully Furnished,0,21,59.95
+Delhi NCR,Gurgaon Sector 56,895,2,2,Villa,Semi-Furnished,1,25,81.32
+Delhi NCR,Noida Sector 62,623,2,2,Apartment,Fully Furnished,1,18,51.0
+Chennai,Velachery,1370,2,3,Apartment,Unfurnished,0,5,86.19
+Bengaluru,HSR Layout,1593,3,4,Apartment,Semi-Furnished,0,21,139.23
+Bengaluru,Yelahanka,635,1,2,Apartment,Unfurnished,1,22,41.91
+Delhi NCR,Vasant Kunj,1380,2,3,Apartment,Semi-Furnished,1,16,70.56
+Hyderabad,Jubilee Hills,1654,3,3,Apartment,Semi-Furnished,0,20,124.6
+Pune,Kothrud,1483,3,3,Apartment,Semi-Furnished,0,13,100.62
+Bengaluru,Koramangala,950,2,2,Apartment,Unfurnished,0,22,45.57
+Nagpur,Civil Lines,2753,5,5,Villa,Fully Furnished,1,5,177.58
+Pune,Kharadi,1606,3,4,Apartment,Semi-Furnished,1,11,114.1
+Hyderabad,Miyapur,2028,4,4,Apartment,Semi-Furnished,1,6,139.8
+Mumbai,Worli,1632,2,3,Independent House,Unfurnished,1,19,281.04
+Mumbai,Navi Mumbai,839,2,3,Apartment,Fully Furnished,1,12,136.18
+Nagpur,Dharampeth,400,1,2,Apartment,Fully Furnished,1,13,17.89
+Bengaluru,Jayanagar,1551,3,3,Apartment,Semi-Furnished,1,13,135.61
+Bengaluru,Electronic City,1664,3,3,Apartment,Semi-Furnished,1,4,120.84
+Nagpur,Civil Lines,618,1,2,Apartment,Semi-Furnished,1,1,30.71
+Bengaluru,Yelahanka,1087,2,3,Apartment,Semi-Furnished,1,25,64.17
+Delhi NCR,Greater Noida,1587,3,4,Apartment,Unfurnished,0,4,123.93
+Bengaluru,HSR Layout,775,2,2,Apartment,Semi-Furnished,1,19,51.95
+Nashik,Gangapur Road,1414,2,3,Apartment,Fully Furnished,1,7,51.98
+Nashik,College Road,2102,4,4,Apartment,Fully Furnished,0,22,74.29
+Hyderabad,Miyapur,1790,3,3,Apartment,Semi-Furnished,0,8,90.1
+Hyderabad,HITEC City,1114,2,2,Independent House,Semi-Furnished,1,16,71.72
+Hyderabad,HITEC City,1122,2,3,Apartment,Fully Furnished,0,9,103.4
+Pune,Hinjewadi,1327,2,3,Apartment,Unfurnished,1,1,112.28
+Nagpur,Civil Lines,1140,2,3,Apartment,Semi-Furnished,1,11,43.26
+Nagpur,Besha,960,1,1,Independent House,Unfurnished,1,11,39.88
+Nagpur,Civil Lines,2014,3,3,Apartment,Unfurnished,1,20,53.43
+Pune,Baner,1587,3,3,Apartment,Unfurnished,0,17,76.49
+Chennai,Anna Nagar,1163,2,2,Apartment,Semi-Furnished,1,24,59.23
+Nagpur,Besha,1205,2,2,Apartment,Semi-Furnished,0,5,38.39
+Bengaluru,HSR Layout,935,1,1,Apartment,Semi-Furnished,1,21,50.03
+Pune,Kothrud,1151,2,3,Independent House,Semi-Furnished,1,6,90.51
+Hyderabad,Miyapur,2067,3,4,Apartment,Fully Furnished,1,9,166.53
+Hyderabad,Jubilee Hills,1528,3,3,Apartment,Fully Furnished,1,9,123.3
+Nashik,Indira Nagar,840,2,2,Villa,Unfurnished,0,0,52.28
+Nagpur,Ramdaspeth,2417,5,6,Villa,Fully Furnished,1,23,136.97
+Nashik,Gangapur Road,2395,5,5,Apartment,Semi-Furnished,1,8,129.99
+Mumbai,Andheri,1749,3,4,Independent House,Fully Furnished,1,14,352.57
+Delhi NCR,Noida Sector 62,1057,2,3,Apartment,Semi-Furnished,0,15,97.65
+Bengaluru,Koramangala,1006,2,2,Apartment,Fully Furnished,1,20,68.88
+Bengaluru,Jayanagar,657,2,2,Apartment,Semi-Furnished,1,14,56.96
+Delhi NCR,Gurgaon Sector 56,1365,3,3,Apartment,Semi-Furnished,1,0,134.4
+Mumbai,Powai,652,2,2,Apartment,Fully Furnished,0,25,95.26
+Mumbai,Andheri,726,2,3,Apartment,Semi-Furnished,1,5,118.44
+Hyderabad,Gachibowli,1430,2,3,Apartment,Unfurnished,0,17,102.47
+Nashik,College Road,1229,2,3,Apartment,Unfurnished,0,7,46.1
+Nashik,Indira Nagar,2042,4,5,Apartment,Unfurnished,1,3,92.51
+Nashik,Gangapur Road,416,1,2,Apartment,Unfurnished,0,19,16.03
+Nagpur,Ramdaspeth,1066,2,3,Independent House,Fully Furnished,1,19,50.44
+Nashik,Gangapur Road,2154,4,5,Apartment,Semi-Furnished,0,25,99.74
+Bengaluru,Jayanagar,1293,3,4,Apartment,Fully Furnished,1,2,118.79
+Pune,Aundh,2724,5,6,Apartment,Unfurnished,1,24,116.57
+Delhi NCR,Vasant Kunj,1795,3,4,Apartment,Fully Furnished,1,12,176.08
+Delhi NCR,Greater Noida,1227,2,3,Apartment,Unfurnished,1,2,87.18
+Hyderabad,Banjara Hills,556,1,2,Apartment,Unfurnished,1,17,29.37
+Chennai,Anna Nagar,2119,4,4,Apartment,Unfurnished,1,14,171.62
+Delhi NCR,Noida Sector 62,619,2,2,Apartment,Unfurnished,1,12,65.9
+Mumbai,Worli,1247,2,2,Apartment,Fully Furnished,1,0,274.32
+Hyderabad,Gachibowli,489,1,2,Independent House,Semi-Furnished,1,23,34.13
+Nashik,Panchavati,1026,2,3,Independent House,Fully Furnished,0,9,54.59
+Mumbai,Powai,1145,2,2,Independent House,Fully Furnished,1,17,225.04
+Nashik,Mahatma Nagar,1575,2,2,Villa,Semi-Furnished,0,16,55.18
+Hyderabad,Kondapur,1778,3,3,Apartment,Fully Furnished,0,22,143.42
+Chennai,T Nagar,1079,2,3,Apartment,Semi-Furnished,1,6,80.25
+Nagpur,Ramdaspeth,1578,3,4,Apartment,Unfurnished,0,2,70.07
+Hyderabad,Miyapur,925,1,2,Apartment,Fully Furnished,0,7,64.37
+Mumbai,Navi Mumbai,781,1,2,Villa,Unfurnished,1,24,230.82
+Nashik,Panchavati,1211,2,3,Apartment,Unfurnished,0,10,36.25
+Pune,Kothrud,664,1,2,Apartment,Unfurnished,1,5,49.22
+Bengaluru,Yelahanka,1257,2,2,Independent House,Fully Furnished,1,24,83.55
+Nagpur,Manewada,1676,3,4,Apartment,Semi-Furnished,0,22,23.98
+Delhi NCR,Noida Sector 62,1257,2,2,Apartment,Semi-Furnished,0,25,116.81
+Nashik,Mahatma Nagar,2282,4,4,Apartment,Semi-Furnished,1,9,97.97
+Bengaluru,Indiranagar,1389,2,3,Apartment,Unfurnished,1,8,169.12
+Chennai,Anna Nagar,1812,4,5,Apartment,Semi-Furnished,1,13,117.93
+Bengaluru,Koramangala,1454,2,3,Apartment,Semi-Furnished,1,8,170.56
+Mumbai,Bandra,1776,3,3,Apartment,Unfurnished,1,12,134.6
+Bengaluru,Electronic City,1529,2,2,Apartment,Semi-Furnished,0,11,82.5
+Chennai,Velachery,615,1,1,Independent House,Unfurnished,1,10,51.58
+Pune,Kharadi,1455,2,3,Apartment,Semi-Furnished,0,8,73.25
+Chennai,Anna Nagar,1779,3,4,Apartment,Fully Furnished,1,1,161.74
+Nagpur,Manewada,2246,5,5,Apartment,Unfurnished,1,8,85.15
+Bengaluru,Indiranagar,1055,2,2,Independent House,Semi-Furnished,1,16,98.08
+Hyderabad,Banjara Hills,1862,4,4,Apartment,Semi-Furnished,1,24,98.03
+Delhi NCR,Vasant Kunj,1307,2,2,Apartment,Fully Furnished,1,0,151.49
+Hyderabad,Gachibowli,1719,3,3,Apartment,Fully Furnished,1,0,158.32
+Bengaluru,Koramangala,1993,4,4,Apartment,Fully Furnished,0,14,184.53
+Bengaluru,Yelahanka,1013,2,2,Apartment,Unfurnished,1,22,55.62
+Delhi NCR,Noida Sector 62,1723,2,2,Villa,Semi-Furnished,1,0,213.81
+Nashik,Gangapur Road,1600,2,2,Apartment,Semi-Furnished,1,13,50.62
+Delhi NCR,Greater Noida,2495,5,6,Villa,Semi-Furnished,1,11,375.92
+Bengaluru,Electronic City,1652,3,4,Apartment,Fully Furnished,1,20,110.22
+Pune,Wakad,1519,3,3,Apartment,Fully Furnished,1,3,135.85
+Chennai,Adyar,2249,4,4,Apartment,Unfurnished,1,13,160.54
+Delhi NCR,Gurgaon Sector 56,858,2,3,Apartment,Semi-Furnished,1,20,86.35
+Delhi NCR,Gurgaon Sector 56,2107,4,4,Apartment,Fully Furnished,1,9,231.0
+Delhi NCR,Noida Sector 62,400,1,2,Apartment,Unfurnished,1,16,19.47
+Nagpur,Besha,1202,2,3,Apartment,Semi-Furnished,1,19,32.16
+Delhi NCR,Noida Sector 62,2117,4,5,Apartment,Semi-Furnished,1,13,113.21
+Hyderabad,Gachibowli,1611,3,3,Apartment,Fully Furnished,1,24,83.13
+Bengaluru,HSR Layout,1327,2,2,Apartment,Fully Furnished,1,0,109.44
+Pune,Aundh,536,1,1,Apartment,Semi-Furnished,1,7,32.23
+Hyderabad,Miyapur,1290,3,4,Apartment,Semi-Furnished,0,4,83.41
+Mumbai,Andheri,648,1,1,Apartment,Semi-Furnished,1,2,172.18
+Hyderabad,Kondapur,970,1,1,Apartment,Fully Furnished,0,6,86.67
+Delhi NCR,Vasant Kunj,2318,4,5,Apartment,Unfurnished,1,21,114.16
+Mumbai,Andheri,2505,5,6,Villa,Fully Furnished,0,5,558.69
+Nashik,College Road,1489,2,2,Apartment,Fully Furnished,1,6,72.42
+Hyderabad,Gachibowli,1034,2,2,Apartment,Unfurnished,1,8,64.03
+Chennai,Anna Nagar,2597,5,6,Apartment,Semi-Furnished,1,13,141.06
+Hyderabad,Jubilee Hills,1377,2,3,Apartment,Fully Furnished,1,5,103.65
+Hyderabad,Banjara Hills,1346,2,3,Apartment,Semi-Furnished,1,19,92.4
+Hyderabad,Miyapur,914,2,2,Apartment,Unfurnished,1,18,59.63
+Delhi NCR,Dwarka,1948,3,4,Apartment,Unfurnished,1,13,159.52
+Pune,Viman Nagar,1800,3,4,Independent House,Unfurnished,0,10,103.97
+Mumbai,Borivali,993,2,3,Apartment,Semi-Furnished,1,19,153.41
+Nashik,Mahatma Nagar,2272,4,4,Independent House,Semi-Furnished,1,10,120.63
+Nagpur,Civil Lines,1353,2,3,Apartment,Semi-Furnished,1,3,61.4
+Nagpur,Ramdaspeth,1197,2,2,Apartment,Fully Furnished,0,14,49.55
+Nashik,Indira Nagar,1357,3,4,Independent House,Fully Furnished,0,10,65.16
+Pune,Aundh,1477,3,4,Independent House,Semi-Furnished,0,17,90.56
+Nagpur,Manewada,1596,3,4,Apartment,Semi-Furnished,1,20,57.69
+Nagpur,Ramdaspeth,808,1,1,Independent House,Unfurnished,0,10,33.7
+Delhi NCR,Noida Sector 62,1296,2,2,Independent House,Fully Furnished,0,22,124.28
+Mumbai,Andheri,513,1,2,Apartment,Fully Furnished,1,8,81.25
+Bengaluru,Whitefield,1668,3,3,Apartment,Unfurnished,1,20,96.74
+Hyderabad,Miyapur,573,2,3,Apartment,Fully Furnished,1,7,44.18
+Pune,Hinjewadi,1859,3,3,Apartment,Unfurnished,1,22,131.73
+Mumbai,Juhu,441,1,1,Independent House,Unfurnished,1,3,118.11
+Nagpur,Civil Lines,1536,3,4,Apartment,Fully Furnished,1,16,61.6
+Nagpur,Manewada,2330,5,5,Apartment,Semi-Furnished,1,5,101.22
+Nashik,Mahatma Nagar,1427,3,3,Independent House,Fully Furnished,0,7,89.03
+Nashik,College Road,1412,2,3,Apartment,Fully Furnished,0,11,61.92
+Delhi NCR,Noida Sector 62,1166,2,3,Apartment,Semi-Furnished,1,11,122.96
+Delhi NCR,Noida Sector 62,1159,2,3,Apartment,Fully Furnished,1,16,112.81
+Delhi NCR,Gurgaon Sector 56,1496,3,3,Apartment,Unfurnished,0,18,106.98
+Pune,Hinjewadi,1295,2,3,Apartment,Unfurnished,1,15,76.89
+Hyderabad,HITEC City,1612,3,4,Apartment,Semi-Furnished,0,3,140.59
+Chennai,OMR,1730,4,4,Apartment,Unfurnished,1,5,178.99
+Nagpur,Manewada,991,1,1,Apartment,Unfurnished,1,8,40.65
+Mumbai,Borivali,2501,5,5,Independent House,Semi-Furnished,0,1,491.5
+Mumbai,Thane,1213,3,3,Independent House,Unfurnished,1,25,176.46
+Nagpur,Ramdaspeth,1043,2,3,Apartment,Unfurnished,1,9,31.44
+Nagpur,Ramdaspeth,1807,3,4,Apartment,Fully Furnished,0,4,107.18
+Bengaluru,HSR Layout,1465,2,2,Apartment,Semi-Furnished,1,6,113.47
+Pune,Viman Nagar,1885,4,5,Villa,Fully Furnished,1,16,180.88
+Nagpur,Besha,1071,2,3,Apartment,Unfurnished,1,19,46.86
+Pune,Aundh,1532,3,4,Apartment,Unfurnished,1,21,90.44
+Nashik,Mahatma Nagar,2020,3,3,Apartment,Unfurnished,1,0,110.4
+Chennai,Velachery,1103,2,2,Apartment,Unfurnished,1,11,74.38
+Nashik,Indira Nagar,1343,2,3,Apartment,Fully Furnished,1,2,64.53
+Nashik,Indira Nagar,2777,5,5,Apartment,Unfurnished,1,7,160.81
+Hyderabad,Banjara Hills,1701,3,4,Villa,Unfurnished,1,9,165.9
+Nashik,Indira Nagar,1694,3,4,Apartment,Unfurnished,1,4,65.13
+Nashik,College Road,1239,2,3,Apartment,Semi-Furnished,0,4,58.49
+Chennai,OMR,1224,2,3,Apartment,Semi-Furnished,1,13,46.97
+Mumbai,Worli,696,1,1,Independent House,Fully Furnished,1,4,175.12
+Nashik,College Road,1659,3,4,Apartment,Unfurnished,1,25,53.17
+Mumbai,Andheri,730,1,1,Apartment,Semi-Furnished,1,22,73.09
+Nagpur,Dharampeth,800,1,1,Apartment,Fully Furnished,1,4,36.75
+Bengaluru,HSR Layout,1681,3,3,Apartment,Unfurnished,0,2,183.16
+Mumbai,Powai,1731,3,3,Apartment,Unfurnished,0,15,337.52
+Delhi NCR,Gurgaon Sector 56,1707,4,5,Apartment,Unfurnished,1,17,130.23
+Nashik,Mahatma Nagar,1854,3,3,Apartment,Unfurnished,1,4,88.06
+Bengaluru,Electronic City,1762,3,3,Apartment,Semi-Furnished,0,18,87.72
+Chennai,OMR,1846,3,4,Apartment,Unfurnished,1,13,127.01
+Nashik,Panchavati,400,1,2,Apartment,Unfurnished,1,1,16.13
+Nagpur,Civil Lines,1558,2,3,Apartment,Unfurnished,1,16,59.76
+Nagpur,Ramdaspeth,1061,2,2,Apartment,Semi-Furnished,1,14,32.15
+Bengaluru,HSR Layout,1872,3,4,Apartment,Fully Furnished,1,12,191.93
+Bengaluru,Electronic City,1308,3,4,Apartment,Fully Furnished,1,18,89.42
+Delhi NCR,Gurgaon Sector 56,790,1,1,Apartment,Unfurnished,1,21,33.63
+Hyderabad,Gachibowli,1885,4,4,Independent House,Semi-Furnished,0,1,173.16
+Nashik,College Road,651,1,1,Independent House,Fully Furnished,0,5,30.69
+Delhi NCR,Noida Sector 62,2832,5,5,Apartment,Semi-Furnished,1,7,327.34
+Hyderabad,Banjara Hills,1005,2,2,Apartment,Fully Furnished,0,6,84.2
+Mumbai,Borivali,1667,3,3,Apartment,Fully Furnished,1,6,323.55
+Hyderabad,Miyapur,1806,3,4,Apartment,Fully Furnished,1,25,123.0
+Delhi NCR,Gurgaon Sector 56,1813,3,3,Apartment,Unfurnished,1,7,167.87
+Mumbai,Borivali,708,1,2,Apartment,Semi-Furnished,0,5,140.08
+Hyderabad,Miyapur,2176,4,5,Apartment,Fully Furnished,0,18,136.66
+Chennai,OMR,2103,3,3,Apartment,Unfurnished,1,24,131.87
+Nagpur,Dharampeth,1276,2,2,Villa,Fully Furnished,0,11,72.12
+Pune,Aundh,1772,3,3,Apartment,Unfurnished,1,23,91.24
+Hyderabad,Banjara Hills,1365,2,3,Independent House,Unfurnished,0,1,116.39
+Mumbai,Juhu,1230,2,3,Apartment,Unfurnished,1,24,147.4
+Delhi NCR,Greater Noida,847,1,2,Independent House,Semi-Furnished,1,6,93.61
+Nagpur,Manewada,2145,4,4,Apartment,Unfurnished,1,13,75.59
+Mumbai,Bandra,1700,4,4,Apartment,Unfurnished,1,5,145.07
+Nashik,College Road,1475,2,2,Apartment,Semi-Furnished,1,21,54.27
+Nashik,Mahatma Nagar,882,2,3,Apartment,Semi-Furnished,1,24,30.84
+Nashik,Indira Nagar,1223,2,3,Apartment,Fully Furnished,0,1,53.57
+Chennai,OMR,665,1,1,Apartment,Fully Furnished,1,3,64.53
+Nagpur,Civil Lines,762,1,1,Apartment,Semi-Furnished,0,0,31.73
+Nashik,Mahatma Nagar,1095,2,2,Apartment,Fully Furnished,1,15,44.46
+Mumbai,Worli,1178,2,2,Apartment,Unfurnished,1,17,207.55
+Nagpur,Dharampeth,2118,4,5,Independent House,Fully Furnished,1,24,84.06
+Mumbai,Borivali,1990,3,4,Independent House,Fully Furnished,0,25,386.8
+Nashik,Mahatma Nagar,1173,2,3,Villa,Semi-Furnished,1,4,78.43
+Mumbai,Thane,1444,3,4,Villa,Fully Furnished,1,10,327.61
+Nashik,Gangapur Road,1198,2,3,Apartment,Fully Furnished,1,8,52.45
+Bengaluru,Koramangala,1241,2,3,Apartment,Semi-Furnished,1,20,90.29
+Mumbai,Andheri,786,2,3,Apartment,Semi-Furnished,1,8,117.37
+Chennai,Anna Nagar,1194,2,2,Independent House,Fully Furnished,0,7,112.58
+Chennai,Adyar,1171,2,2,Villa,Semi-Furnished,1,0,133.09
+Nagpur,Ramdaspeth,1569,3,3,Apartment,Fully Furnished,1,3,60.72
+Nagpur,Ramdaspeth,1311,2,3,Apartment,Semi-Furnished,1,0,56.74
+Nagpur,Ramdaspeth,1627,3,4,Independent House,Semi-Furnished,1,9,67.35
+Mumbai,Thane,1979,4,4,Apartment,Semi-Furnished,1,6,318.12
+Delhi NCR,Greater Noida,710,1,1,Independent House,Fully Furnished,0,2,136.16
+Delhi NCR,Greater Noida,1694,3,3,Apartment,Fully Furnished,1,10,123.24
+Nashik,Indira Nagar,1354,3,4,Apartment,Semi-Furnished,1,14,42.77
+Hyderabad,Kondapur,1346,3,4,Apartment,Fully Furnished,0,11,142.53
+Chennai,Adyar,1435,2,3,Apartment,Unfurnished,1,24,100.3
+Bengaluru,Electronic City,1004,2,3,Apartment,Unfurnished,1,13,59.7
+Bengaluru,Electronic City,893,2,2,Independent House,Unfurnished,1,3,57.68
+Chennai,Velachery,400,1,1,Apartment,Unfurnished,0,4,34.78
+Delhi NCR,Vasant Kunj,1157,2,3,Apartment,Semi-Furnished,0,10,135.43
+Pune,Baner,514,1,2,Villa,Fully Furnished,1,23,29.06
+Delhi NCR,Dwarka,1871,3,3,Apartment,Fully Furnished,0,4,224.01
+Nagpur,Manewada,1291,2,3,Apartment,Fully Furnished,1,24,36.26
+Pune,Viman Nagar,886,2,3,Apartment,Fully Furnished,1,9,55.08
+Bengaluru,Whitefield,1220,1,1,Apartment,Fully Furnished,1,3,128.26
+Nagpur,Besha,1336,2,3,Apartment,Unfurnished,1,9,56.48
+Pune,Viman Nagar,1434,3,3,Apartment,Fully Furnished,1,0,101.79
+Mumbai,Juhu,400,1,1,Apartment,Fully Furnished,1,23,51.93
+Chennai,OMR,2585,4,4,Independent House,Semi-Furnished,1,2,243.88
+Bengaluru,HSR Layout,1353,3,3,Independent House,Fully Furnished,1,23,116.96
+Nagpur,Besha,831,2,2,Independent House,Unfurnished,1,3,40.51
+Nagpur,Civil Lines,1658,3,3,Apartment,Fully Furnished,1,7,65.61
+Bengaluru,Koramangala,2081,3,4,Apartment,Fully Furnished,0,16,134.05
+Hyderabad,Gachibowli,1561,2,3,Apartment,Fully Furnished,1,1,108.23
+Delhi NCR,Greater Noida,1359,2,3,Apartment,Unfurnished,1,7,124.57
+Nashik,Panchavati,1300,2,3,Apartment,Semi-Furnished,0,7,71.28
+Nashik,Panchavati,2646,5,6,Apartment,Unfurnished,1,14,122.64
+Nagpur,Dharampeth,1216,2,3,Independent House,Semi-Furnished,1,19,41.91
+Nashik,Gangapur Road,1087,2,3,Apartment,Semi-Furnished,1,21,40.65
+Nagpur,Manewada,1237,2,3,Apartment,Unfurnished,1,15,41.66
+Mumbai,Thane,1280,2,2,Independent House,Fully Furnished,1,24,166.44
+Pune,Kharadi,409,1,1,Independent House,Unfurnished,1,11,28.42
+Mumbai,Juhu,1023,2,2,Independent House,Semi-Furnished,1,9,139.94
+Bengaluru,HSR Layout,944,2,2,Apartment,Unfurnished,0,0,80.91
+Delhi NCR,Vasant Kunj,684,1,2,Apartment,Fully Furnished,1,1,49.31
+Nashik,College Road,1457,3,4,Apartment,Fully Furnished,1,2,83.54
+Delhi NCR,Gurgaon Sector 56,400,1,1,Apartment,Semi-Furnished,1,19,33.24
+Nashik,Gangapur Road,1189,2,2,Apartment,Unfurnished,0,8,59.43
+Delhi NCR,Dwarka,1486,2,2,Apartment,Semi-Furnished,1,22,98.64
+Hyderabad,Kondapur,934,1,2,Villa,Fully Furnished,0,14,93.03
+Delhi NCR,Noida Sector 62,973,2,3,Apartment,Semi-Furnished,1,4,142.91
+Pune,Wakad,1502,3,3,Apartment,Unfurnished,1,12,74.43
+Hyderabad,Gachibowli,1848,3,4,Apartment,Semi-Furnished,1,1,118.95
+Nagpur,Ramdaspeth,1390,3,3,Apartment,Fully Furnished,1,17,28.0
+Hyderabad,Jubilee Hills,1218,2,3,Apartment,Fully Furnished,0,3,95.63
+Delhi NCR,Gurgaon Sector 56,1192,2,2,Apartment,Unfurnished,1,6,44.39
+Mumbai,Worli,877,2,3,Apartment,Fully Furnished,1,12,190.72
+Mumbai,Thane,709,1,2,Apartment,Fully Furnished,1,18,104.2
+Hyderabad,Miyapur,2348,5,6,Apartment,Semi-Furnished,1,6,152.48
+Nagpur,Civil Lines,884,2,3,Apartment,Unfurnished,1,15,44.07
+Nashik,Indira Nagar,1338,2,2,Apartment,Unfurnished,0,19,55.76
+Chennai,Adyar,967,2,3,Independent House,Semi-Furnished,0,6,78.82
+Delhi NCR,Greater Noida,1744,3,4,Villa,Fully Furnished,1,2,329.8
+Bengaluru,Indiranagar,1537,3,4,Apartment,Unfurnished,1,25,63.86
+Delhi NCR,Dwarka,1802,3,4,Apartment,Unfurnished,1,6,146.79
+Pune,Kothrud,594,1,2,Apartment,Unfurnished,1,16,34.77
+Chennai,OMR,1395,2,2,Apartment,Semi-Furnished,1,22,66.45
+Chennai,OMR,1296,2,3,Apartment,Fully Furnished,1,5,142.77
+Bengaluru,Jayanagar,1164,2,3,Apartment,Semi-Furnished,0,17,70.87
+Delhi NCR,Dwarka,1262,2,3,Independent House,Semi-Furnished,1,6,84.25
+Hyderabad,Kondapur,1208,2,2,Apartment,Fully Furnished,1,0,71.01
+Nashik,Gangapur Road,688,1,2,Apartment,Unfurnished,1,1,25.9
+Delhi NCR,Gurgaon Sector 56,2498,5,6,Apartment,Fully Furnished,0,22,137.47
+Chennai,Adyar,1397,3,4,Apartment,Fully Furnished,0,1,95.58
+Bengaluru,Yelahanka,1359,3,3,Apartment,Unfurnished,0,14,116.61
+Mumbai,Borivali,400,1,2,Apartment,Fully Furnished,0,10,89.27
+Nagpur,Civil Lines,2513,4,5,Apartment,Fully Furnished,1,13,68.99
+Mumbai,Andheri,887,2,2,Apartment,Semi-Furnished,0,8,109.76
+Delhi NCR,Noida Sector 62,1470,3,3,Apartment,Semi-Furnished,0,10,96.57
+Chennai,Adyar,1595,3,3,Villa,Unfurnished,0,2,169.81
+Nagpur,Ramdaspeth,1714,3,3,Independent House,Unfurnished,1,14,73.64
+Pune,Viman Nagar,1008,2,2,Apartment,Semi-Furnished,1,5,64.25
+Delhi NCR,Noida Sector 62,1801,3,4,Apartment,Semi-Furnished,1,22,163.57
+Chennai,OMR,711,1,2,Apartment,Fully Furnished,1,20,44.12
+Delhi NCR,Noida Sector 62,1277,2,2,Apartment,Fully Furnished,1,6,104.48
+Nagpur,Ramdaspeth,1328,3,4,Apartment,Unfurnished,1,6,49.47
+Pune,Kothrud,1729,2,3,Apartment,Fully Furnished,1,21,97.61
+Mumbai,Borivali,1216,3,4,Apartment,Semi-Furnished,1,10,192.11
+Nagpur,Besha,1072,2,2,Apartment,Fully Furnished,1,18,36.28
+Delhi NCR,Vasant Kunj,1255,2,2,Apartment,Fully Furnished,1,15,95.43
+Hyderabad,Miyapur,769,1,2,Villa,Semi-Furnished,0,5,63.51
+Bengaluru,HSR Layout,2152,4,4,Independent House,Unfurnished,1,25,227.35
+Nashik,Indira Nagar,1626,3,4,Apartment,Unfurnished,1,6,59.92
+Bengaluru,HSR Layout,1128,2,2,Independent House,Semi-Furnished,0,23,83.91
+Nagpur,Dharampeth,1021,2,3,Apartment,Fully Furnished,1,22,44.13
+Hyderabad,Kondapur,1766,3,4,Independent House,Unfurnished,1,4,114.82
+Delhi NCR,Dwarka,2543,4,5,Apartment,Semi-Furnished,1,21,270.37
+Mumbai,Juhu,1908,4,4,Apartment,Semi-Furnished,0,19,226.99
+Pune,Viman Nagar,400,1,1,Apartment,Semi-Furnished,0,10,22.31
+Delhi NCR,Noida Sector 62,1141,2,3,Apartment,Semi-Furnished,0,8,121.47
+Bengaluru,Koramangala,2203,3,3,Independent House,Semi-Furnished,0,20,160.48
+Delhi NCR,Gurgaon Sector 56,1133,2,2,Apartment,Fully Furnished,1,0,48.53
+Delhi NCR,Vasant Kunj,1994,3,4,Apartment,Fully Furnished,0,19,163.63
+Chennai,Adyar,1506,2,3,Independent House,Semi-Furnished,0,25,107.51
+Delhi NCR,Gurgaon Sector 56,1021,2,3,Apartment,Fully Furnished,1,13,106.06
+Mumbai,Navi Mumbai,1363,2,2,Apartment,Unfurnished,1,8,153.71
+Mumbai,Thane,1538,2,3,Apartment,Semi-Furnished,1,20,261.8
+Mumbai,Andheri,1196,2,2,Apartment,Unfurnished,1,2,189.34
+Bengaluru,Yelahanka,1135,2,3,Villa,Fully Furnished,1,23,101.24
+Chennai,Velachery,452,1,2,Apartment,Fully Furnished,0,12,22.28
+Nagpur,Besha,891,2,2,Villa,Semi-Furnished,0,13,43.33
+Pune,Viman Nagar,1583,3,4,Apartment,Unfurnished,0,11,83.15
+Delhi NCR,Dwarka,1346,3,3,Apartment,Unfurnished,1,5,108.18
+Nashik,Gangapur Road,565,1,1,Independent House,Fully Furnished,1,8,28.33
+Nagpur,Dharampeth,1012,2,2,Apartment,Fully Furnished,1,23,41.98
+Chennai,Adyar,1323,2,3,Apartment,Fully Furnished,0,10,89.71
+Chennai,Anna Nagar,795,2,3,Apartment,Unfurnished,1,8,64.99

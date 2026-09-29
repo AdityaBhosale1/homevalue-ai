@@ -1,0 +1,20 @@
+# Dependencies & Build Outputs
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment Files (Do not commit secrets)
+.env
+.env.local
+.env.*
+!.env.example
+
+# IDE / OS Cache
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
