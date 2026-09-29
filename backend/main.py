@@ -20,24 +20,32 @@ app = FastAPI(
     version="2.0.0"
 )
 
-# Production CORS Configuration
+# Production & Local Development CORS Configuration
 frontend_url = os.getenv("FRONTEND_URL", "").strip()
 allowed_origins = [
     "http://localhost:3000",
     "http://localhost:5173",
     "http://127.0.0.1:3000",
     "http://127.0.0.1:5173",
+    "https://homevalue-ai.vercel.app",
+    "https://homevalue-ai.vercel.app/",
 ]
+
 if frontend_url:
-    allowed_origins.append(frontend_url)
+    if frontend_url not in allowed_origins:
+        allowed_origins.append(frontend_url)
     if frontend_url.endswith('/'):
-        allowed_origins.append(frontend_url.rstrip('/'))
+        clean_url = frontend_url.rstrip('/')
+        if clean_url not in allowed_origins:
+            allowed_origins.append(clean_url)
     else:
-        allowed_origins.append(f"{frontend_url}/")
+        slash_url = f"{frontend_url}/"
+        if slash_url not in allowed_origins:
+            allowed_origins.append(slash_url)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins if frontend_url else ["*"],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
