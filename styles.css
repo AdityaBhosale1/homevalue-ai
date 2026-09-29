@@ -54,6 +54,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#predict,
+#analytics,
+#about,
+#what-if-section {
+  scroll-margin-top: 100px;
+}
+
 /* Background & Hero Container */
 .hero-wrapper {
   position: relative;
